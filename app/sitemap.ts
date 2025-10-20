@@ -10,10 +10,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/worship', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/outreach-international', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/outreach-national', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/blog', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const },
   ];
 
-  return routes.map((route) => ({
+  // Blog posts
+  const blogPosts = [
+    'the-only-way-film-released',
+    'haiti-leadership-conference-2024',
+    'new-prison-volunteers-needed',
+    'breakfast-ministry-breakthrough',
+  ];
+
+  const blogRoutes = blogPosts.map(slug => ({
+    path: `/blog/${slug}`,
+    priority: 0.7,
+    changeFrequency: 'monthly' as const,
+  }));
+
+  return [...routes, ...blogRoutes].map((route) => ({
     url: `${baseUrl}${route.path}`,
     lastModified: new Date(),
     changeFrequency: route.changeFrequency,

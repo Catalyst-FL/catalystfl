@@ -73,10 +73,10 @@ export default function Header() {
                   <Image 
                     src="/images/LOGO.png" 
                     alt="Catalyst Ministries Florida - Prison Ministry and Gospel Outreach"
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     className={`object-contain transition-all duration-300 group-hover:scale-110 ${
-                      scrolled ? 'h-12 w-12 sm:h-14 sm:w-14' : 'h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20'
+                      scrolled ? 'h-16 w-16 sm:h-20 sm:w-20' : 'h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28'
                     }`}
                     priority
                   />

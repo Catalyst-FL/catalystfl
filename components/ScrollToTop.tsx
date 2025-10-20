@@ -35,8 +35,6 @@ export default function ScrollToTop() {
       aria-label="Scroll to top"
     >
       <ArrowUp className="h-6 w-6 group-hover:-translate-y-1 transition-transform" />
-      {/* Ripple effect */}
-      <span className="absolute inset-0 rounded-full bg-primary-400 animate-ping opacity-20" />
     </button>
   );
 }

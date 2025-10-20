@@ -83,10 +83,6 @@ export default function FloatingContact() {
         ) : (
           <MessageCircle className="h-6 w-6 group-hover:scale-110 transition-transform" />
         )}
-        {/* Pulse effect when closed */}
-        {!isOpen && (
-          <span className="absolute inset-0 rounded-full bg-primary-400 animate-ping opacity-20" />
-        )}
       </button>
     </div>
   );

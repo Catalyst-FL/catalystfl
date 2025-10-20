@@ -182,12 +182,25 @@ export default function Productions() {
                         />
                       </div>
                     </div>
+                  ) : production.title === 'The Only Way' ? (
+                    <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg bg-gray-900">
+                      <Image
+                        src="/images/theonlywaymovieposter.png"
+                        alt="The Only Way Motion Picture Poster"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <p className="text-center font-semibold text-lg">
+                          Available at theonlywayfilm.com
+                        </p>
+                      </div>
+                    </div>
                   ) : (
                     <div className="aspect-video rounded-lg bg-gradient-to-br from-primary-400 to-primary-600 flex flex-col items-center justify-center shadow-lg p-8">
                       <production.icon className="h-24 w-24 text-white opacity-80 mb-4" />
-                      <p className="text-white text-center font-semibold">
-                        Film Available at theonlywayfilm.com
-                      </p>
                     </div>
                   )}
                 </div>
