@@ -67,7 +67,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       {/* Hero Section with Video Background */}
-      <div className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 overflow-hidden min-h-screen flex items-center">
+      <div className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 overflow-hidden min-h-[70vh] flex items-center">
         {/* Video Background */}
         <video
           autoPlay

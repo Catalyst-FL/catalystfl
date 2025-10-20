@@ -38,6 +38,7 @@ export default function Productions() {
         title="Productions"
         subtitle="Gospel-Centered Drama & Film"
         description="Reaching souls through powerful storytelling and the transformative message of Jesus Christ"
+        icon={<Film className="h-8 w-8" />}
       />
 
       {/* Mission */}

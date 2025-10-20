@@ -56,6 +56,7 @@ export default function PrisonMinistry() {
         title="Prison Ministry"
         subtitle="Our Heart for the Incarcerated"
         description="Bringing hope, healing, and the Gospel to those behind bars for over two decades"
+        icon={<Heart className="h-8 w-8" />}
       />
 
       {/* Mission Statement */}

@@ -64,6 +64,7 @@ export default function OutreachNational() {
         title="National Outreach"
         subtitle="Serving America"
         description="Bringing hope to communities across the United States through worship, practical service, and the Gospel"
+        icon={<MapPin className="h-8 w-8" />}
       />
 
       {/* Introduction */}

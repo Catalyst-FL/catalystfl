@@ -17,6 +17,7 @@ export default function Worship() {
         title="Praise & Worship"
         subtitle="Music That Transforms"
         description="Bringing the presence of God through music, changing atmospheres, and touching hearts"
+        icon={<Music className="h-8 w-8" />}
       />
 
       {/* Main Content */}

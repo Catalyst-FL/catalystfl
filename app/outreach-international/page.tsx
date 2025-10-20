@@ -49,6 +49,7 @@ export default function OutreachInternational() {
         title="International Outreach"
         subtitle="Haiti Missions"
         description="Partnering with local churches and orphanages to bring hope, support, and the Gospel to Haiti"
+        icon={<Globe className="h-8 w-8" />}
       />
 
       {/* Introduction */}
