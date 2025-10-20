@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
@@ -67,8 +68,32 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Catalyst Ministries Florida. All rights reserved. 501(c)(3) Nonprofit Organization</p>
+        <div className="mt-8 border-t border-gray-800 pt-8">
+          <div className="text-center text-gray-400 mb-4">
+            <p>&copy; {currentYear} Catalyst Ministries Florida. All rights reserved. 501(c)(3) Nonprofit Organization</p>
+          </div>
+          
+          {/* Built By Credit */}
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
+            <span>Built by</span>
+            <a 
+              href="https://www.aidreambuilders.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity group"
+            >
+              <Image
+                src="/images/aidreambuilderslogo.png"
+                alt="AiDreamBuilders"
+                width={24}
+                height={24}
+                className="object-contain group-hover:scale-110 transition-transform"
+              />
+              <span className="font-semibold text-gray-400 group-hover:text-white transition-colors">
+                AiDreamBuilders.com
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
