@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
 import { generatePageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
-import { Calendar, User, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, User, ArrowLeft } from 'lucide-react';
 import CTASection from '@/components/CTASection';
+import ShareButton from '@/components/ShareButton';
 
 // Blog posts data
 const blogPosts: Record<string, {
@@ -451,21 +452,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <div className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold text-gray-900">Share this post:</span>
-              <button
-                onClick={() => {
-                  if (navigator.share) {
-                    navigator.share({
-                      title: post.title,
-                      text: post.excerpt,
-                      url: window.location.href,
-                    });
-                  }
-                }}
-                className="inline-flex items-center px-4 py-2 rounded-lg bg-primary-50 text-primary-700 hover:bg-primary-100 transition-colors"
-              >
-                <Share2 className="h-4 w-4 mr-2" />
-                Share
-              </button>
+              <ShareButton title={post.title} text={post.excerpt} />
             </div>
           </div>
         </div>
