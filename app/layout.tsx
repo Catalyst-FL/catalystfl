@@ -5,6 +5,8 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Analytics from '@/components/Analytics';
+import ScrollToTop from '@/components/ScrollToTop';
+import FloatingContact from '@/components/FloatingContact';
 import { siteConfig, organizationSchema } from '@/lib/metadata';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -55,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <Analytics />
         <Script
@@ -68,6 +70,8 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <ScrollToTop />
+        <FloatingContact />
       </body>
     </html>
   );
