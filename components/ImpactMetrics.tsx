@@ -14,10 +14,10 @@ const metrics = [
   },
   {
     icon: MapPin,
-    value: 12,
+    value: 23,
     suffix: '',
-    label: 'Prisons Visited Monthly',
-    description: 'Regular outreach visits',
+    label: 'Years of Prison Ministry',
+    description: 'At least once monthly since 2003',
     color: 'from-purple-500 to-purple-600',
   },
   {

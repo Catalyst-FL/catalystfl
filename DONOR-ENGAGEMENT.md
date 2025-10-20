@@ -59,10 +59,10 @@ Build trust through transparent, measurable impact data.
    - Message: "Serving since 2003"
    - Trust Signal: Longevity and consistency
 
-2. **12 Prisons Visited Monthly**
+2. **23 Years of Prison Ministry**
    - Icon: Map Pin (purple)
-   - Message: "Regular outreach visits"
-   - Impact: Consistent presence
+   - Message: "At least once monthly since 2003"
+   - Impact: Unwavering commitment
 
 3. **1,500+ Lives Touched**
    - Icon: Users (teal)
