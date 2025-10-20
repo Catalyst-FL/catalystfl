@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "regions": ["pdx1", "sfo1", "cle1"],
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "edge",
+      "regions": ["pdx1", "sfo1", "cle1"]
+    },
+    "api/**/*.js": {
+      "regions": ["pdx1", "sfo1", "cle1"]
+    },
+    "app/**/*.tsx": {
+      "maxDuration": 10
+    },
+    "app/**/*.ts": {
+      "maxDuration": 10
+    }
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}
