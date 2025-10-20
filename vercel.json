@@ -1,10 +1,5 @@
 {
   "regions": ["pdx1", "sfo1", "cle1"],
-  "functions": {
-    "api/**/*.js": {
-      "regions": ["pdx1", "sfo1", "cle1"]
-    }
-  },
   "build": {
     "env": {
       "NEXT_TELEMETRY_DISABLED": "1"
