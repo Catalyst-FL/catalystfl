@@ -3,6 +3,26 @@
 import PageHero from '@/components/PageHero';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
+import Script from 'next/script';
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://catalystfl.vercel.app/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Contact',
+      item: 'https://catalystfl.vercel.app/contact',
+    },
+  ],
+};
 
 const contactInfo = [
   {
@@ -36,7 +56,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Create mailto link with form data
     const mailtoLink = `mailto:catalystministriesfl@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     )}`;
@@ -52,6 +71,11 @@ export default function Contact() {
 
   return (
     <>
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <PageHero
         title="Contact Us"
         subtitle="Get Involved"

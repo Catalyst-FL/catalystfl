@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 export const siteConfig = {
   name: 'Catalyst Ministries Florida',
   description: 'Igniting change through prison ministry, international outreach, worship, and gospel-centered productions. Serving communities since 2003.',
-  url: 'https://www.catalystfl.org',
-  ogImage: '/og-image.jpg',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://catalystfl.vercel.app',
+  ogImage: '/images/LOGO.png',
   keywords: [
     'prison ministry',
     'christian ministry',
@@ -20,6 +20,11 @@ export const siteConfig = {
     'william smith',
     'jeanne smith',
     '501c3 ministry',
+    'naples florida ministry',
+    'inmate ministry',
+    'prison volunteer',
+    'international missions',
+    'gospel productions',
   ],
   authors: [{ name: 'Catalyst Ministries Florida' }],
   creator: 'Catalyst Ministries Florida',
@@ -98,7 +103,7 @@ export const organizationSchema = {
   name: siteConfig.name,
   alternateName: 'Catalyst Ministries',
   url: siteConfig.url,
-  logo: `${siteConfig.url}/logo.png`,
+  logo: `${siteConfig.url}/images/LOGO.png`,
   description: siteConfig.description,
   foundingDate: '2003',
   founders: [
@@ -114,7 +119,8 @@ export const organizationSchema = {
   ],
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Florida',
+    addressLocality: 'Naples',
+    addressRegion: 'FL',
     addressCountry: 'US',
   },
   contactPoint: {
@@ -122,12 +128,23 @@ export const organizationSchema = {
     telephone: '+1-239-247-2330',
     email: 'catalystministriesfl@gmail.com',
     contactType: 'Customer Service',
+    availableLanguage: 'English',
   },
   sameAs: [],
-  areaServed: {
-    '@type': 'Place',
-    name: 'Worldwide',
-  },
+  areaServed: [
+    {
+      '@type': 'Place',
+      name: 'Florida',
+    },
+    {
+      '@type': 'Place',
+      name: 'Haiti',
+    },
+    {
+      '@type': 'Place',
+      name: 'United States',
+    },
+  ],
   knowsAbout: [
     'Prison Ministry',
     'Christian Outreach',
@@ -136,4 +153,6 @@ export const organizationSchema = {
     'Gospel Drama',
     'Homeless Ministry',
   ],
+  nonprofit: true,
+  taxID: '501(c)(3)',
 };

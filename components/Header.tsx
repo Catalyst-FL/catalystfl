@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -23,10 +24,13 @@ export default function Header() {
         <div className="flex w-full items-center justify-between border-b border-primary-300 py-4 lg:border-none">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img 
+              <Image 
                 src="/images/LOGO.png" 
-                alt="Catalyst Ministries" 
+                alt="Catalyst Ministries Florida - Prison Ministry and Gospel Outreach"
+                width={128}
+                height={128}
                 className="h-24 w-24 md:h-32 md:w-32 object-contain hover:scale-105 transition-transform"
+                priority
               />
             </Link>
           </div>

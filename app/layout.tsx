@@ -4,6 +4,7 @@ import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Analytics from '@/components/Analytics';
 import { siteConfig, organizationSchema } from '@/lib/metadata';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -56,6 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Analytics />
         <Script
           id="organization-schema"
           type="application/ld+json"

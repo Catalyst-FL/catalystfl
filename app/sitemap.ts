@@ -1,22 +1,22 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.catalystfl.org';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://catalystfl.vercel.app';
   
   const routes = [
-    '',
-    '/prison-ministry',
-    '/productions',
-    '/worship',
-    '/outreach-international',
-    '/outreach-national',
-    '/contact',
+    { path: '', priority: 1.0, changeFrequency: 'weekly' as const },
+    { path: '/prison-ministry', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/productions', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/worship', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/outreach-international', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/outreach-national', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const },
   ];
 
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: `${baseUrl}${route.path}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : 0.8,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
   }));
 }

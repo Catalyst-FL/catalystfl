@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import Script from 'next/script';
 import { generatePageMetadata } from '@/lib/metadata';
+import { generateWebPageSchema } from '@/lib/schemas';
 import { Heart, Users, Globe, Music, Film, HandHeart } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 
@@ -49,9 +52,20 @@ const features = [
   },
 ];
 
+const webPageSchema = generateWebPageSchema({
+  name: 'Home - Catalyst Ministries Florida',
+  description: 'Catalyst Ministries Florida - Igniting change through prison ministry, international outreach, worship, and gospel-centered productions. Serving communities since 2003.',
+  url: 'https://catalystfl.vercel.app/',
+});
+
 export default function Home() {
   return (
     <>
+      <Script
+        id="webpage-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       {/* Hero Section with Video Background */}
       <div className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 overflow-hidden min-h-screen flex items-center">
         {/* Video Background */}
@@ -114,39 +128,39 @@ export default function Home() {
 
           {/* Image Showcase */}
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <div className="relative overflow-hidden rounded-lg shadow-lg group">
-              <img
+            <div className="relative overflow-hidden rounded-lg shadow-lg group h-56">
+              <Image
                 src="/images/25-Smitty-preaching.jpg"
                 alt="Pastor Smitty preaching the Gospel"
-                className="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                style={{ imageRendering: 'crisp-edges' }}
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end z-10">
                 <p className="p-4 text-white font-semibold">Preaching the Gospel</p>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg group">
-              <img
+            <div className="relative overflow-hidden rounded-lg shadow-lg group h-56">
+              <Image
                 src="/images/inmate-praying.png"
                 alt="Inmate praying - lives transformed through prison ministry"
-                className="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                style={{ imageRendering: 'crisp-edges' }}
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end z-10">
                 <p className="p-4 text-white font-semibold">Prison Ministry Impact</p>
               </div>
             </div>
-            <div className="relative overflow-hidden rounded-lg shadow-lg group">
-              <img
+            <div className="relative overflow-hidden rounded-lg shadow-lg group h-56">
+              <Image
                 src="/images/Haiti-Crusade-crowdn1.jpg"
                 alt="Haiti crusade with thousands in attendance"
-                className="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                style={{ imageRendering: 'crisp-edges' }}
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end z-10">
                 <p className="p-4 text-white font-semibold">Haiti Missions</p>
               </div>
             </div>
