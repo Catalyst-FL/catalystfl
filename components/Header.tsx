@@ -13,6 +13,7 @@ const navigation = [
   { name: 'Praise & Worship', href: '/worship' },
   { name: 'International Outreach', href: '/outreach-international' },
   { name: 'National Outreach', href: '/outreach-national' },
+  { name: 'News', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -124,8 +125,19 @@ export default function Header() {
               })}
             </div>
           
-            {/* CTA Button - Desktop */}
-            <div className="hidden lg:block ml-4">
+            {/* CTA Buttons - Desktop */}
+            <div className="hidden lg:flex items-center gap-3 ml-4">
+              <Link
+                href="https://www.powr.io/checkout_screen?unique_label=3aa1bc03_1745869827"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-2.5 rounded-full bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group btn-shine"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Donate
+              </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center px-6 py-2.5 rounded-full bg-gradient-to-r from-primary-600 to-primary-700 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
@@ -189,8 +201,19 @@ export default function Header() {
                   </Link>
                 );
               })}
-              {/* Mobile CTA */}
-              <div className="pt-4 px-4">
+              {/* Mobile CTAs */}
+              <div className="pt-4 px-4 space-y-3">
+                <Link
+                  href="https://www.powr.io/checkout_screen?unique_label=3aa1bc03_1745869827"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full px-6 py-3 rounded-lg bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Donate Now
+                </Link>
                 <Link
                   href="/contact"
                   className="flex items-center justify-center w-full px-6 py-3 rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"

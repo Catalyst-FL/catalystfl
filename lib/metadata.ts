@@ -104,6 +104,7 @@ export const organizationSchema = {
   alternateName: 'Catalyst Ministries',
   url: siteConfig.url,
   logo: `${siteConfig.url}/images/LOGO.png`,
+  image: `${siteConfig.url}/images/LOGO.png`,
   description: siteConfig.description,
   foundingDate: '2003',
   founders: [
@@ -111,10 +112,12 @@ export const organizationSchema = {
       '@type': 'Person',
       name: 'William Smith',
       alternateName: 'Smitty',
+      jobTitle: 'Co-Founder & Pastor',
     },
     {
       '@type': 'Person',
       name: 'Jeanne Smith',
+      jobTitle: 'Co-Founder & Pastor',
     },
   ],
   address: {
@@ -145,6 +148,10 @@ export const organizationSchema = {
       name: 'United States',
     },
   ],
+  nonprofitStatus: '501(c)(3)',
+  nonprofit: true,
+  taxID: '501(c)(3)',
+  slogan: 'Igniting change through the Gospel of Christ',
   knowsAbout: [
     'Prison Ministry',
     'Christian Outreach',
@@ -152,7 +159,7 @@ export const organizationSchema = {
     'Worship Ministry',
     'Gospel Drama',
     'Homeless Ministry',
+    'Gospel Productions',
   ],
-  nonprofit: true,
-  taxID: '501(c)(3)',
+  mission: 'To reach the lost and incarcerated, support international missions, and spread hope through worship and productions.',
 };

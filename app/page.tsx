@@ -5,6 +5,8 @@ import { generatePageMetadata } from '@/lib/metadata';
 import { generateWebPageSchema } from '@/lib/schemas';
 import { Heart, Users, Globe, Music, Film, HandHeart } from 'lucide-react';
 import CTASection from '@/components/CTASection';
+import ImpactMetrics from '@/components/ImpactMetrics';
+import Testimonials from '@/components/Testimonials';
 
 export const metadata = generatePageMetadata({
   title: 'Home',
@@ -205,6 +207,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Impact Metrics Section */}
+      <ImpactMetrics />
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Latest News Section */}
       <div className="bg-white py-16">
