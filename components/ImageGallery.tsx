@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { X } from 'lucide-react';
 
 interface ImageGalleryProps {
@@ -30,12 +31,12 @@ export default function ImageGallery({ images, columns = 3 }: ImageGalleryProps)
             className="group relative h-48 md:h-56 overflow-hidden rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-shadow bg-gray-100"
             onClick={() => setSelectedImage(idx)}
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-              style={{ imageRendering: 'crisp-edges' }}
+              fill
+              className="object-contain group-hover:scale-105 transition-transform duration-300"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             {image.title && (
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
@@ -61,11 +62,15 @@ export default function ImageGallery({ images, columns = 3 }: ImageGalleryProps)
           </button>
           
           <div className="max-w-6xl max-h-[90vh] flex flex-col items-center">
-            <img
-              src={images[selectedImage].src}
-              alt={images[selectedImage].alt}
-              className="max-w-full max-h-[80vh] object-contain rounded-lg"
-            />
+            <div className="relative w-full h-[80vh]">
+              <Image
+                src={images[selectedImage].src}
+                alt={images[selectedImage].alt}
+                fill
+                className="object-contain rounded-lg"
+                sizes="90vw"
+              />
+            </div>
             {images[selectedImage].title && (
               <p className="mt-4 text-white text-center text-lg">
                 {images[selectedImage].title}

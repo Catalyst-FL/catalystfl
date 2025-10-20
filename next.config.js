@@ -8,8 +8,6 @@ const nextConfig = {
   },
   // Enable React strict mode for better error handling
   reactStrictMode: true,
-  // Improve performance
-  swcMinify: true,
   // Security headers
   async headers() {
     return [

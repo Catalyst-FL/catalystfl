@@ -2,6 +2,7 @@ import { generatePageMetadata } from '@/lib/metadata';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
 import ImageGallery from '@/components/ImageGallery';
+import Image from 'next/image';
 import { Film, Play, Users } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
@@ -144,40 +145,40 @@ export default function Productions() {
                 <div className={idx % 2 === 1 ? 'lg:order-1' : ''}>
                   {production.title === 'A.S.K. Drama' ? (
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img
+                      <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <Image
                           src="/images/widow-scene-1_edited_edited.jpg"
                           alt="A.S.K. Drama Performance - Widow Scene"
-                          className="w-full h-full object-contain"
-                          loading="lazy"
-                          style={{ imageRendering: 'crisp-edges' }}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 50vw, 25vw"
                         />
                       </div>
-                      <div className="h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img
+                      <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <Image
                           src="/images/Glenn-and-Michael_edited_edited.jpg"
                           alt="A.S.K. Drama Performance - Glenn and Michael"
-                          className="w-full h-full object-contain"
-                          loading="lazy"
-                          style={{ imageRendering: 'crisp-edges' }}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 50vw, 25vw"
                         />
                       </div>
-                      <div className="h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img
+                      <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <Image
                           src="/images/Paralyzed-Man-lying-down-and-Wife-sittin.jpg"
                           alt="A.S.K. Drama Performance - Paralyzed Man Scene"
-                          className="w-full h-full object-contain"
-                          loading="lazy"
-                          style={{ imageRendering: 'crisp-edges' }}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 50vw, 25vw"
                         />
                       </div>
-                      <div className="h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                        <img
+                      <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                        <Image
                           src="/images/Travy-bfore_edited_edited.jpg"
                           alt="A.S.K. Drama Performance - Cast Member"
-                          className="w-full h-full object-contain"
-                          loading="lazy"
-                          style={{ imageRendering: 'crisp-edges' }}
+                          fill
+                          className="object-contain"
+                          sizes="(max-width: 768px) 50vw, 25vw"
                         />
                       </div>
                     </div>
