@@ -314,8 +314,9 @@ const blogPosts: Record<string, {
   },
 };
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPosts[slug];
   
   if (!post) {
     return generatePageMetadata({
@@ -328,13 +329,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return generatePageMetadata({
     title: post.title,
     description: post.excerpt,
-    path: `/blog/${params.slug}`,
+    path: `/blog/${slug}`,
     keywords: ['catalyst ministries', post.category.toLowerCase(), 'ministry news', 'christian ministry'],
   });
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug];
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPosts[slug];
 
   if (!post) {
     notFound();
