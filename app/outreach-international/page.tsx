@@ -187,6 +187,31 @@ export default function OutreachInternational() {
         </div>
       </div>
 
+      {/* Latest Haiti Ministry Report */}
+      <div className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <article className="prose prose-lg mx-auto text-gray-700">
+            <h2 className="text-center">Highlights from the Haiti Leadership Summit</h2>
+            <p>
+              During our most recent trip to Port-au-Prince, hundreds of Haitian pastors and leaders gathered
+              for a dynamic week of worship, equipping, and compassionate ministry. Services were marked by
+              heartfelt prayer, bold preaching, and powerful altar ministry that strengthened the local church.
+            </p>
+            <p>
+              Catalyst Ministries partnered with Fishers of Men Ministries to host training intensives, youth
+              workshops, and nightly crusades that welcomed thousands from across the region. Attendees engaged
+              deeply—taking notes during leadership sessions, responding in prayer, and kneeling together in
+              humility as they sought God for their communities.
+            </p>
+            <p>
+              The photos below capture moments of unity, intercession, and celebration as we stood alongside our
+              Haitian family. Each image tells the story of a nation hungry for hope and a church committed to
+              shining the light of Christ.
+            </p>
+          </article>
+        </div>
+      </div>
+
       {/* Photo Gallery - Haiti Missions */}
       <div className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -202,19 +227,54 @@ export default function OutreachInternational() {
           <ImageGallery
             images={[
               {
-                src: '/images/Haiti-Crusade-crowdn1.jpg',
-                alt: 'Haiti crusade with 45,000+ attendees',
-                title: 'Massive Crusade Attendance',
+                src: '/images/haiti/haiti-leadership-prayer.svg',
+                alt: 'Haitian believers worshipping with raised hands during Catalyst Ministries leadership summit',
+                title: 'Leaders United in Prayer',
               },
               {
-                src: '/images/25-Smitty-preaching.jpg',
-                alt: 'Pastor Smitty preaching at Haiti conference',
-                title: 'Preaching to Leaders',
+                src: '/images/haiti/haiti-conference-front-row.svg',
+                alt: 'Pastors and church leaders seated in the front row of the Haiti ministry conference',
+                title: 'Haiti Ministry Leadership Gathering',
               },
               {
-                src: '/images/new-bus.jpg',
-                alt: 'Support for Haiti ministry transportation',
-                title: 'Supporting Local Ministry',
+                src: '/images/haiti/haiti-conference-notes.svg',
+                alt: 'Haitian ministry participants diligently taking notes during leadership training',
+                title: 'Equipping Haitian Leaders',
+              },
+              {
+                src: '/images/haiti/haiti-crusade-overview-1.svg',
+                alt: 'Overhead view of a packed worship center during the Port-au-Prince crusade',
+                title: 'Crusade Crowd Worshipping Together',
+              },
+              {
+                src: '/images/haiti/haiti-crusade-overview-2.svg',
+                alt: 'Balcony perspective of Haitian believers filling every seat during conference sessions',
+                title: 'Every Seat Filled with Expectation',
+              },
+              {
+                src: '/images/haiti/haiti-pastor-praying-over-crowd.svg',
+                alt: 'Pastor ministering and praying over Haitian attendees at the altar',
+                title: 'Pastoral Prayer and Ministry',
+              },
+              {
+                src: '/images/haiti/haiti-leaders-red-ties.svg',
+                alt: 'Haitian ministry team in coordinated attire representing unity and excellence',
+                title: 'Committed Haiti Leadership Team',
+              },
+              {
+                src: '/images/haiti/haiti-altar-ministry.svg',
+                alt: 'Catalyst Ministries team members laying hands on Haitian believers during altar ministry',
+                title: 'Intercession at the Altar',
+              },
+              {
+                src: '/images/haiti/haiti-conference-side-angle.svg',
+                alt: 'Side angle view of Haiti outreach conference with attendees focused on teaching',
+                title: 'Teaching Moments that Transform',
+              },
+              {
+                src: '/images/haiti/haiti-conference-prayer-benches.svg',
+                alt: 'Haitian men kneeling at sanctuary benches in prayer during the Catalyst outreach',
+                title: 'Responding in Prayer',
               },
             ]}
             columns={3}
