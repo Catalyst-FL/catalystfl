@@ -1,32 +1,43 @@
-import { generatePageMetadata } from '@/lib/metadata';
-import PageHero from '@/components/PageHero';
-import CTASection from '@/components/CTASection';
-import ImageGallery from '@/components/ImageGallery';
-import Image from 'next/image';
-import { Film, Play, Users } from 'lucide-react';
+import { generatePageMetadata } from "@/lib/metadata";
+import PageHero from "@/components/PageHero";
+import CTASection from "@/components/CTASection";
+import ImageGallery from "@/components/ImageGallery";
+import Image from "next/image";
+import { Film, Play, Users } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: 'Productions',
-  description: 'Gospel-centered drama and film productions including A.S.K. and "The Only Way" motion picture. Reaching audiences with the message of Jesus Christ.',
-  path: '/productions',
-  keywords: ['christian drama', 'gospel film', 'the only way film', 'christian productions', 'faith based movies'],
+  title: "Productions",
+  description:
+    'Gospel-centered film productions including A.S.K. and "The Only Way" motion picture. Reaching audiences with the message of Jesus Christ.',
+  path: "/productions",
+  keywords: [
+    "christian film",
+    "gospel film",
+    "the only way film",
+    "christian productions",
+    "faith based movies",
+  ],
 });
 
 const productions = [
   {
-    title: 'A.S.K. Drama',
-    subtitle: 'Live Music & Drama Experience',
-    description: 'A live-action experience that will take you through the incredible life of Zacchaeus as he witnesses the historic miracles of Jesus that will change his life.',
-    scripture: '"Ask and it will be given to you; Seek and you will find; Knock and the door will be opened to you. For everyone who asks receives; the one who seeks finds; and to the one who knocks, the door will be opened."',
-    scriptureRef: 'Matthew 7:7-8',
+    title: "A.S.K. Movie",
+    subtitle: "Feature Film Experience",
+    description:
+      "A powerful cinematic journey through the incredible life of Zacchaeus as he witnesses the historic miracles of Jesus that change his life forever.",
+    scripture:
+      '"Ask and it will be given to you; Seek and you will find; Knock and the door will be opened to you. For everyone who asks receives; the one who seeks finds; and to the one who knocks, the door will be opened."',
+    scriptureRef: "Matthew 7:7-8",
     icon: Users,
     available: true,
   },
   {
-    title: 'The Only Way',
-    subtitle: 'Motion Picture',
-    description: '"The Only Way" is a motion picture that takes you on a life changing journey with a man who witnessed true miracles firsthand. We believe this movie will reach an audience that may not know Jesus and touch a world that is hurting and searching for peace.',
-    status: 'Our film is complete! Check out theonlywayfilm.com for viewing times and dates.',
+    title: "The Only Way",
+    subtitle: "Motion Picture",
+    description:
+      '"The Only Way" is a motion picture that takes you on a life changing journey with a man who witnessed true miracles firsthand. We believe this movie will reach an audience that may not know Jesus and touch a world that is hurting and searching for peace.',
+    status:
+      "Our film is complete! Check out theonlywayfilm.com for viewing times and dates.",
     icon: Film,
     available: true,
   },
@@ -37,7 +48,7 @@ export default function Productions() {
     <>
       <PageHero
         title="Productions"
-        subtitle="Gospel-Centered Drama & Film"
+        subtitle="Gospel-Centered Film"
         description="Reaching souls through powerful storytelling and the transformative message of Jesus Christ"
         icon={<Film className="h-8 w-8" />}
       />
@@ -51,9 +62,9 @@ export default function Productions() {
               Expanding Our Reach
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              The Catalyst Team has begun to expand by performing the A.S.K. music/drama and we are 
-              currently producing motion pictures that bring the Gospel to life in powerful, 
-              transformative ways.
+              The Catalyst Team has begun to expand with the A.S.K. movie, and
+              we are producing motion pictures that bring the Gospel to life in
+              powerful, transformative ways.
             </p>
           </div>
         </div>
@@ -64,14 +75,14 @@ export default function Productions() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {productions.map((production, idx) => (
-              <div 
+              <div
                 key={production.title}
                 className={`grid gap-8 items-center ${
-                  idx % 2 === 0 ? 'lg:grid-cols-2' : 'lg:grid-cols-2'
+                  idx % 2 === 0 ? "lg:grid-cols-2" : "lg:grid-cols-2"
                 }`}
               >
                 {/* Content */}
-                <div className={idx % 2 === 1 ? 'lg:order-2' : ''}>
+                <div className={idx % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="flex items-center mb-4">
                     <production.icon className="h-10 w-10 text-primary-600 mr-3" />
                     <div>
@@ -83,7 +94,7 @@ export default function Productions() {
                       </p>
                     </div>
                   </div>
-                  
+
                   <p className="text-lg text-gray-600 mb-6">
                     {production.description}
                   </p>
@@ -104,34 +115,43 @@ export default function Productions() {
                       <p className="text-sm font-semibold text-green-900 uppercase tracking-wide mb-2">
                         Latest Update
                       </p>
-                      <p className="text-gray-700">
-                        {production.status}
-                      </p>
-                      {production.title === 'The Only Way' && (
-                        <a 
-                          href="https://theonlywayfilm.com" 
-                          target="_blank" 
+                      <p className="text-gray-700">{production.status}</p>
+                      {production.title === "The Only Way" && (
+                        <a
+                          href="https://theonlywayfilm.com"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center mt-4 text-green-700 font-semibold hover:text-green-800"
                         >
                           Visit theonlywayfilm.com
-                          <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          <svg
+                            className="ml-2 h-5 w-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
                           </svg>
                         </a>
                       )}
                     </div>
                   )}
 
-                  {production.title === 'A.S.K. Drama' && (
+                  {production.title === "A.S.K. Movie" && (
                     <div className="mt-6">
                       <p className="text-sm font-semibold text-gray-900 mb-2">
-                        Book This Performance
+                        Host a Screening
                       </p>
                       <p className="text-gray-600 mb-4">
-                        If you would like us to share this drama with your organization, please contact us.
+                        If you would like to host a screening of the A.S.K.
+                        movie for your organization, please contact us.
                       </p>
-                      <a 
+                      <a
                         href="tel:239-247-2330"
                         className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700"
                       >
@@ -142,13 +162,13 @@ export default function Productions() {
                 </div>
 
                 {/* Production Images */}
-                <div className={idx % 2 === 1 ? 'lg:order-1' : ''}>
-                  {production.title === 'A.S.K. Drama' ? (
+                <div className={idx % 2 === 1 ? "lg:order-1" : ""}>
+                  {production.title === "A.S.K. Movie" ? (
                     <div className="grid grid-cols-2 gap-4">
                       <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                         <Image
                           src="/images/widow-scene-1_edited_edited.jpg"
-                          alt="A.S.K. Drama Performance - Widow Scene"
+                          alt="A.S.K. Movie - Widow Scene"
                           fill
                           className="object-contain"
                           sizes="(max-width: 768px) 50vw, 25vw"
@@ -157,7 +177,7 @@ export default function Productions() {
                       <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                         <Image
                           src="/images/Glenn-and-Michael_edited_edited.jpg"
-                          alt="A.S.K. Drama Performance - Glenn and Michael"
+                          alt="A.S.K. Movie - Glenn and Michael"
                           fill
                           className="object-contain"
                           sizes="(max-width: 768px) 50vw, 25vw"
@@ -166,7 +186,7 @@ export default function Productions() {
                       <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                         <Image
                           src="/images/Paralyzed-Man-lying-down-and-Wife-sittin.jpg"
-                          alt="A.S.K. Drama Performance - Paralyzed Man Scene"
+                          alt="A.S.K. Movie - Paralyzed Man Scene"
                           fill
                           className="object-contain"
                           sizes="(max-width: 768px) 50vw, 25vw"
@@ -175,14 +195,14 @@ export default function Productions() {
                       <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                         <Image
                           src="/images/Travy-bfore_edited_edited.jpg"
-                          alt="A.S.K. Drama Performance - Cast Member"
+                          alt="A.S.K. Movie - Cast Member"
                           fill
                           className="object-contain"
                           sizes="(max-width: 768px) 50vw, 25vw"
                         />
                       </div>
                     </div>
-                  ) : production.title === 'The Only Way' ? (
+                  ) : production.title === "The Only Way" ? (
                     <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg bg-gray-900">
                       <Image
                         src="/images/theonlywaymovieposter.png"
@@ -218,9 +238,10 @@ export default function Productions() {
               Our Vision
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              We believe these productions will reach audiences who may not know Jesus and touch a 
-              world that is hurting and searching for peace. Through powerful storytelling, compelling 
-              music, and authentic testimonies, we're bringing the Gospel to life in ways that 
+              We believe these productions will reach audiences who may not know
+              Jesus and touch a world that is hurting and searching for peace.
+              Through powerful storytelling, compelling music, and authentic
+              testimonies, we're bringing the Gospel to life in ways that
               transform hearts and change lives.
             </p>
           </div>
@@ -230,7 +251,7 @@ export default function Productions() {
       {/* CTA */}
       <CTASection
         title="Bring Our Productions to Your Community"
-        description="Book the A.S.K. drama for your church, organization, or event. Contact us to learn more about scheduling and availability."
+        description="Schedule an A.S.K. movie screening for your church, organization, or event. Contact us to learn more about scheduling and availability."
         primaryButtonText="Contact Us"
         primaryButtonHref="/contact"
         secondaryButtonText="Learn About Our Ministry"

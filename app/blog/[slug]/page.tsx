@@ -70,9 +70,9 @@ const blogPosts: Record<
     image: "/images/theonlywaymovieposter.png",
   },
 
-  "haiti-leadership-conference-2024": {
-    title: "Haiti Leadership Conference 2024 - A Historic Gathering",
-    date: "2024-10-28",
+  "haiti-leadership-conference-2025": {
+    title: "Haiti Leadership Conference 2025 - A Historic Gathering",
+    date: "2025-09-01",
     author: "Pastor Smitty",
     category: "International Outreach",
     excerpt:
@@ -214,6 +214,32 @@ const blogPosts: Record<
       "Interested in joining us on a future Haiti trip? We take small teams several times per year. Contact us to learn more about how you can personally experience the faith and joy of the Haitian church.",
     ],
     image: "/images/haiti/haiti-conference-crowd.jpg",
+  },
+
+  "ronald-rosier-testimony": {
+    title: "Testimony: Ronald Rosier — Never Forgotten",
+    date: "2025-10-15",
+    author: "Ronald Rosier",
+    category: "Testimonies",
+    excerpt:
+      "After 37 years incarcerated, Ronald shares a powerful testimony of God’s mercy, a favorable parole review, and the hope that came through Christ and the love shown by Catalyst — a reminder that we are never forgotten.",
+    content: [
+      "**A Life Transformed by the Mercy of God**",
+      "My name is Ronald Rosier. I first met Catalyst Ministries in the early 2000s at GCI, and the message I heard there has never left me: YOU ARE NEVER FORGOTTEN. God will never leave or forsake us.",
+      "**A Hard Road**",
+      "I have been incarcerated since 1988. At 21 years old, I was convicted of first-degree murder and sentenced to life with a 25-year mandatory before parole could even be considered. As of today, I have served 37 straight years.",
+      "Over the years, I have lost both of my parents, a brother to suicide, and a sister to murder. While I still have siblings, some I have not heard from in many years. Yet, even in loss, God has surrounded me with a family in the Body of Christ.",
+      "**A Praise Report**",
+      "On October 15, 2025, I had my third parole hearing. I had no natural family present, but four brothers and sisters in Christ spoke on my behalf. Two members of my victim’s family spoke in opposition — and I understand the pain my crime caused. I will live with remorse for the rest of my life.",
+      "I know God has forgiven me for the innocent life I took, and through His Holy Spirit I have learned to forgive myself. I pray for every victim my actions created. By God’s grace, I will never create another.",
+      "**God Opened a Door**",
+      "In spite of the odds, the Florida Parole Commission gave me a favorable ruling. I was placed in the Dr. Regina B. Shearn transition PRE-CTP program, with a subsequent review in 18 months and a projected release date of 2031 — a date that may come down at the next review. This program has paroled men with life sentences. To God be the glory.",
+      "Proverbs 21:1 reminds me: ‘The king’s heart is in the hand of the Lord… He turns it wherever He wishes.’ God truly turned hearts in my case.",
+      "**Gratitude**",
+      "I am not a bad person; I made tragic choices. But in Christ, I can begin again. I am a child of God. Catalyst’s ministry is not in vain — your love reached me and countless others. Thank you for never forgetting us.",
+      "— Ronald Rosier",
+    ],
+    image: "/images/ronaldRcoverphoto.png",
   },
 
   "new-prison-volunteers-needed": {

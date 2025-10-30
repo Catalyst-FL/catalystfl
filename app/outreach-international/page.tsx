@@ -238,10 +238,10 @@ export default function OutreachInternational() {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-6">
               <h2 className="text-3xl font-extrabold text-white text-center">
-                Haiti Leadership Conference 2024 - A Historic Gathering
+                Haiti Leadership Conference 2025 - A Historic Gathering
               </h2>
               <p className="text-primary-100 text-center mt-2">
-                October 28, 2024
+                September 1, 2025
               </p>
             </div>
 
@@ -300,7 +300,7 @@ export default function OutreachInternational() {
 
               <div className="mt-8 text-center">
                 <Link
-                  href="/blog/haiti-leadership-conference-2024"
+                  href="/blog/haiti-leadership-conference-2025"
                   className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   Read the Full Story & See Photos

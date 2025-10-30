@@ -17,7 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts
   const blogPosts = [
     'the-only-way-film-released',
-    'haiti-leadership-conference-2024',
+    'haiti-leadership-conference-2025',
+    'ronald-rosier-testimony',
     'new-prison-volunteers-needed',
     'breakfast-ministry-breakthrough',
   ];

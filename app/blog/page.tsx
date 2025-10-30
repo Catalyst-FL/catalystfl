@@ -39,11 +39,11 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Haiti Leadership Conference 2024 - A Historic Gathering",
-    slug: "haiti-leadership-conference-2024",
+    title: "Haiti Leadership Conference 2025 - A Historic Gathering",
+    slug: "haiti-leadership-conference-2025",
     excerpt:
       "Over 1,500 pastors and leaders gathered for our annual leadership conference in Port-au-Prince. Powerful worship, teaching, and fellowship marked this year's historic event with incredible testimonies of God's faithfulness.",
-    date: "2024-10-28",
+    date: "2025-09-01",
     author: "Pastor Smitty",
     category: "International Outreach",
     image: "/images/haiti/haiti-conference-crowd.jpg",
@@ -72,6 +72,18 @@ const blogPosts = [
     category: "National Outreach",
     image: "/images/LOGO.png",
     featured: false,
+  },
+  {
+    id: 5,
+    title: "Testimony: Ronald Rosier — Never Forgotten",
+    slug: "ronald-rosier-testimony",
+    excerpt:
+      "After 37 years incarcerated, Ronald shares a powerful story of God’s mercy, a favorable parole review, and the hope found in Christ — a reminder that we are never forgotten.",
+    date: "2025-10-15",
+    author: "Ronald Rosier",
+    category: "Testimonies",
+    image: "/images/ronaldRcoverphoto.png",
+    featured: true,
   },
 ];
 

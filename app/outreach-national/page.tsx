@@ -1,60 +1,69 @@
-import { generatePageMetadata } from '@/lib/metadata';
-import PageHero from '@/components/PageHero';
-import CTASection from '@/components/CTASection';
-import ImageGallery from '@/components/ImageGallery';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Home, Coffee, Users, MapPin, ExternalLink } from 'lucide-react';
+import { generatePageMetadata } from "@/lib/metadata";
+import PageHero from "@/components/PageHero";
+import CTASection from "@/components/CTASection";
+import ImageGallery from "@/components/ImageGallery";
+import Image from "next/image";
+import Link from "next/link";
+import { Home, Coffee, Users, MapPin, ExternalLink } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: 'National Outreach',
-  description: 'Serving communities across America through Integrity Church, Breakfast in the Park for the homeless, and regional outreach programs.',
-  path: '/outreach-national',
-  keywords: ['homeless ministry', 'community outreach', 'church ministry', 'florida ministry', 'south carolina missions'],
+  title: "National Outreach",
+  description:
+    "Serving communities across America through Integrity Church, Breakfast in the Park for the homeless, and regional outreach programs.",
+  path: "/outreach-national",
+  keywords: [
+    "homeless ministry",
+    "community outreach",
+    "church ministry",
+    "florida ministry",
+    "south carolina missions",
+  ],
 });
 
 const ministries = [
   {
-    name: 'Integrity Church and Homes',
-    leaders: 'Rob & Jill Sparrow',
+    name: "Integrity Church and Homes",
+    leaders: "Rob & Jill Sparrow",
     icon: Home,
-    description: 'Pastors Smitty and Jeanne have been pastors at Integrity Church for the past 6 years.',
+    description:
+      "Pastors Smitty and Jeanne have been pastors at Integrity Church for the past 6 years.",
     activities: [
-      'Pastor Smitty plays guitar on the worship team',
-      'Maintains the Integrity Homes facilities',
-      'Pastor Jeanne performs and directs dramas',
-      'Part of the hospitality ministry',
-      'Team members serve as greeters and ushers',
-      'Supporting the food pantry ministry',
-      'Teaching weekly classes with residents',
+      "Pastor Smitty plays guitar on the worship team",
+      "Maintains the Integrity Homes facilities",
+      "Pastor Jeanne performs and directs dramas",
+      "Part of the hospitality ministry",
+      "Team members serve as greeters and ushers",
+      "Supporting the food pantry ministry",
+      "Teaching weekly classes with residents",
     ],
   },
   {
-    name: 'Breakfast in the Park',
-    leaders: 'Todd and Tracy Fitts',
+    name: "Breakfast in the Park",
+    leaders: "Todd and Tracy Fitts",
     icon: Coffee,
-    description: '9 years of Saturday morning ministry to the homeless at Naples Park.',
+    description:
+      "9 years of Saturday morning ministry to the homeless at Naples Park.",
     activities: [
-      'Serve breakfast every Saturday',
-      'Worship service for the homeless',
-      'Provide clothes and toiletry items',
-      'Catalyst Band performances',
-      'Building relationships with the community',
-      'Showing the love of Christ in practical ways',
+      "Serve breakfast every Saturday",
+      "Worship service for the homeless",
+      "Provide clothes and toiletry items",
+      "Catalyst Band performances",
+      "Building relationships with the community",
+      "Showing the love of Christ in practical ways",
     ],
   },
   {
-    name: 'South Carolina Outreach',
-    leaders: 'Catalyst & Integrity Church Team',
+    name: "South Carolina Outreach",
+    leaders: "Catalyst & Integrity Church Team",
     icon: MapPin,
-    description: 'Regional outreach bringing hope to underserved communities.',
+    description: "Regional outreach bringing hope to underserved communities.",
     activities: [
-      'Praise and worship services',
-      'A.S.K. drama performances',
-      'Food and clothing distribution',
-      'Door-to-door neighborhood outreach',
-      'Prayer ministry with residents',
-      'Building lasting relationships',
+      "Praise and worship services",
+      "A.S.K. drama performances",
+      "Food and clothing distribution",
+      "Door-to-door neighborhood outreach",
+      "Prayer ministry with residents",
+      "Building lasting relationships",
     ],
   },
 ];
@@ -78,9 +87,10 @@ export default function OutreachNational() {
               Local Impact, National Reach
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              While our heart extends to international missions, we're deeply committed to serving 
-              communities right here in America. From weekly homeless ministry to church partnerships 
-              and regional outreach, we're bringing the Gospel where it's needed most.
+              While our heart extends to international missions, we're deeply
+              committed to serving communities right here in America. From
+              weekly homeless ministry to church partnerships and regional
+              outreach, we're bringing the Gospel where it's needed most.
             </p>
           </div>
         </div>
@@ -100,7 +110,10 @@ export default function OutreachNational() {
 
           <div className="space-y-12">
             {ministries.map((ministry) => (
-              <div key={ministry.name} className="rounded-lg bg-white shadow-sm overflow-hidden">
+              <div
+                key={ministry.name}
+                className="rounded-lg bg-white shadow-sm overflow-hidden"
+              >
                 <div className="p-8">
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
@@ -125,8 +138,16 @@ export default function OutreachNational() {
                     {ministry.activities.map((activity, idx) => (
                       <div key={idx} className="flex items-start">
                         <div className="flex-shrink-0">
-                          <svg className="h-5 w-5 text-primary-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          <svg
+                            className="h-5 w-5 text-primary-600 mt-0.5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                         </div>
                         <span className="ml-3 text-gray-700">{activity}</span>
@@ -150,10 +171,11 @@ export default function OutreachNational() {
                   Breakfast in the Park
                 </h2>
                 <p className="mt-3 text-lg text-orange-100">
-                  Every Saturday morning for the past 9 years, our team has served breakfast and 
-                  held worship services for the homeless community at Naples Park. This ministry, 
-                  led by Todd and Tracy Fitts, embodies the heart of Christ by meeting practical 
-                  needs while sharing the Gospel.
+                  Every Saturday morning for the past 9 years, our team has
+                  served breakfast and held worship services for the homeless
+                  community at Naples Park. This ministry, led by Todd and Tracy
+                  Fitts, embodies the heart of Christ by meeting practical needs
+                  while sharing the Gospel.
                 </p>
               </div>
               <div className="mt-8 md:mt-0 md:ml-8">
@@ -173,23 +195,33 @@ export default function OutreachNational() {
                 Serving at Integrity Church
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Many of our Catalyst team members are active at Integrity Church, where Pastors 
-                Smitty and Jeanne serve as pastors. This partnership allows us to impact our local 
-                community while supporting the Integrity Homes program for those in need.
+                Many of our Catalyst team members are active at Integrity
+                Church, where Pastors Smitty and Jeanne serve as pastors. This
+                partnership allows us to impact our local community while
+                supporting the Integrity Homes program for those in need.
               </p>
               <div className="mt-6 space-y-4">
                 <div className="flex items-start">
                   <Home className="h-6 w-6 text-primary-600 mr-3 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Integrity Homes</h4>
-                    <p className="text-gray-600">Supporting residents with weekly classes and practical care</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Integrity Homes
+                    </h4>
+                    <p className="text-gray-600">
+                      Supporting residents with weekly classes and practical
+                      care
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Users className="h-6 w-6 text-primary-600 mr-3 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Community Service</h4>
-                    <p className="text-gray-600">Food pantry, hospitality, and welcoming newcomers</p>
+                    <h4 className="font-semibold text-gray-900">
+                      Community Service
+                    </h4>
+                    <p className="text-gray-600">
+                      Food pantry, hospitality, and welcoming newcomers
+                    </p>
                   </div>
                 </div>
               </div>
@@ -234,10 +266,11 @@ export default function OutreachNational() {
               Looking Forward
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-gray-600">
-              Our South Carolina outreach was a tremendous success, and we are looking forward to 
-              returning. We believe God is opening doors for Catalyst to expand our national reach, 
-              bringing the combination of worship, drama, and practical service to more communities 
-              across America.
+              Our South Carolina outreach was a tremendous success, and we are
+              looking forward to returning. We believe God is opening doors for
+              Catalyst to expand our national reach, bringing the combination of
+              worship, drama, and practical service to more communities across
+              America.
             </p>
           </div>
         </div>
@@ -258,34 +291,34 @@ export default function OutreachNational() {
           <ImageGallery
             images={[
               {
-                src: '/images/breakfest-team.jpg',
-                alt: 'Breakfast in the Park team serving the homeless',
-                title: 'Breakfast in the Park Ministry',
+                src: "/images/breakfest-team.jpg",
+                alt: "Breakfast in the Park team serving the homeless",
+                title: "Breakfast in the Park Ministry",
               },
               {
-                src: '/images/south-carolina-1.jpg',
-                alt: 'South Carolina outreach event',
-                title: 'South Carolina Outreach',
+                src: "/images/south-carolina-1.jpg",
+                alt: "South Carolina outreach event",
+                title: "South Carolina Outreach",
               },
               {
-                src: '/images/south-carolina-3.jpg',
-                alt: 'Community service in South Carolina',
-                title: 'Serving Local Communities',
+                src: "/images/south-carolina-3.jpg",
+                alt: "Community service in South Carolina",
+                title: "Serving Local Communities",
               },
               {
-                src: '/images/south-carolina.jpg',
-                alt: 'Door-to-door ministry in South Carolina',
-                title: 'Door-to-Door Ministry',
+                src: "/images/south-carolina.jpg",
+                alt: "Door-to-door ministry in South Carolina",
+                title: "Door-to-Door Ministry",
               },
               {
-                src: '/images/south-carolina4.jpg',
-                alt: 'Team prayer and outreach',
-                title: 'Prayer Ministry',
+                src: "/images/south-carolina4.jpg",
+                alt: "Team prayer and outreach",
+                title: "Prayer Ministry",
               },
               {
-                src: '/images/rob-and-jill.jpg',
-                alt: 'Rob and Jill Sparrow from Integrity Church',
-                title: 'Integrity Church Partnership',
+                src: "/images/rob-and-jill.jpg",
+                alt: "Rob and Jill Sparrow from Integrity Church",
+                title: "Integrity Church Partnership",
               },
             ]}
             columns={3}
