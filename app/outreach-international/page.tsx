@@ -1,14 +1,14 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
-import ImageGallery from '@/components/ImageGallery';
-import { Globe, Church, Heart, Gift } from 'lucide-react';
+import Link from 'next/link';
+import { Globe, Church, Heart, Gift, ArrowRight } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
-  title: 'International Outreach',
-  description: 'Supporting missions in Haiti through leadership conferences, crusades, orphanages, and ongoing partnerships. 20+ years of faithful service.',
+  title: 'Haiti Missions & International Outreach - 20+ Years Serving',
+  description: 'Catalyst Ministries partners with Haitian churches for leadership conferences reaching 1,500+ pastors, crusades with 45,000+ attendees, orphanage support, and life-changing Gospel ministry in Port-au-Prince.',
   path: '/outreach-international',
-  keywords: ['haiti missions', 'international missions', 'christian missions', 'orphanage support', 'global outreach'],
+  keywords: ['haiti missions', 'port-au-prince ministry', 'haitian leadership conference', 'international missions', 'christian missions haiti', 'orphanage support haiti', 'global outreach', 'fishers of men ministries', 'haiti crusade', 'catalyst ministries haiti'],
 });
 
 const partners = [
@@ -188,97 +188,62 @@ export default function OutreachInternational() {
       </div>
 
       {/* Latest Haiti Ministry Report */}
-      <div className="bg-white py-16">
+      <div className="bg-gradient-to-br from-gray-50 to-white py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <article className="prose prose-lg mx-auto text-gray-700">
-            <h2 className="text-center">Highlights from the Haiti Leadership Summit</h2>
-            <p>
-              During our most recent trip to Port-au-Prince, hundreds of Haitian pastors and leaders gathered
-              for a dynamic week of worship, equipping, and compassionate ministry. Services were marked by
-              heartfelt prayer, bold preaching, and powerful altar ministry that strengthened the local church.
-            </p>
-            <p>
-              Catalyst Ministries partnered with Fishers of Men Ministries to host training intensives, youth
-              workshops, and nightly crusades that welcomed thousands from across the region. Attendees engaged
-              deeply—taking notes during leadership sessions, responding in prayer, and kneeling together in
-              humility as they sought God for their communities.
-            </p>
-            <p>
-              The photos below capture moments of unity, intercession, and celebration as we stood alongside our
-              Haitian family. Each image tells the story of a nation hungry for hope and a church committed to
-              shining the light of Christ.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      {/* Photo Gallery - Haiti Missions */}
-      <div className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Haiti Ministry in Photos
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              See the impact of our partnership with Haitian churches and ministries
-            </p>
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-6">
+              <h2 className="text-3xl font-extrabold text-white text-center">
+                Haiti Leadership Conference 2024 - A Historic Gathering
+              </h2>
+              <p className="text-primary-100 text-center mt-2">October 28, 2024</p>
+            </div>
+            
+            <article className="prose prose-lg mx-auto text-gray-700 p-8">
+              <p className="text-xl font-semibold text-gray-900 mb-6">
+                Over 1,500 pastors and leaders gathered in Port-au-Prince for three days of powerful teaching, 
+                worship, and fellowship in the face of unprecedented challenges.
+              </p>
+              
+              <p>
+                Despite extreme security challenges and volatile conditions in Port-au-Prince, God made it clear 
+                these pastors needed encouragement. Our team navigated closed airports, roadblocks, and challenging 
+                logistics to be there for this historic gathering.
+              </p>
+              
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Conference Highlights</h3>
+              
+              <ul className="space-y-3">
+                <li><strong>Theme:</strong> "Leading with Faith in Difficult Times"</li>
+                <li><strong>Attendance:</strong> 1,500+ pastors and church leaders from across Haiti</li>
+                <li><strong>Powerful Worship:</strong> Thousands of voices lifted in passionate, authentic praise</li>
+                <li><strong>Resources Distributed:</strong> 1,200 Bibles in Haitian Creole, leadership materials, medical supplies</li>
+                <li><strong>Testimonies:</strong> Stories of miraculous healings, divine protection, and gang members coming to Christ</li>
+                <li><strong>Impact:</strong> Pastors traveled for days through dangerous territory to attend</li>
+              </ul>
+              
+              <p className="mt-6">
+                The Haitian church's faith is unshakeable. Despite hearing gunfire in the distance during the conference, 
+                the worship never stopped. Fear never overtook faith. We came to encourage them, but they encouraged us far more.
+              </p>
+              
+              <div className="mt-8 text-center">
+                <Link
+                  href="/blog/haiti-leadership-conference-2024"
+                  className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
+                >
+                  Read the Full Story & See Photos
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </div>
+              
+              <blockquote className="mt-8 border-l-4 border-primary-600 pl-4 italic text-gray-700">
+                "Thank you for not forgetting us. Thank you for coming when others said it was too dangerous. 
+                Thank you for believing in the Haitian church. We are not a people of defeat - we are a people of faith! 
+                Together, we will see Haiti transformed by the Gospel!"
+                <footer className="text-sm text-gray-600 mt-2">— Message from the Haitian Pastors</footer>
+              </blockquote>
+            </article>
           </div>
-
-          <ImageGallery
-            images={[
-              {
-                src: '/images/haiti/haiti-leadership-prayer.svg',
-                alt: 'Haitian believers worshipping with raised hands during Catalyst Ministries leadership summit',
-                title: 'Leaders United in Prayer',
-              },
-              {
-                src: '/images/haiti/haiti-conference-front-row.svg',
-                alt: 'Pastors and church leaders seated in the front row of the Haiti ministry conference',
-                title: 'Haiti Ministry Leadership Gathering',
-              },
-              {
-                src: '/images/haiti/haiti-conference-notes.svg',
-                alt: 'Haitian ministry participants diligently taking notes during leadership training',
-                title: 'Equipping Haitian Leaders',
-              },
-              {
-                src: '/images/haiti/haiti-crusade-overview-1.svg',
-                alt: 'Overhead view of a packed worship center during the Port-au-Prince crusade',
-                title: 'Crusade Crowd Worshipping Together',
-              },
-              {
-                src: '/images/haiti/haiti-crusade-overview-2.svg',
-                alt: 'Balcony perspective of Haitian believers filling every seat during conference sessions',
-                title: 'Every Seat Filled with Expectation',
-              },
-              {
-                src: '/images/haiti/haiti-pastor-praying-over-crowd.svg',
-                alt: 'Pastor ministering and praying over Haitian attendees at the altar',
-                title: 'Pastoral Prayer and Ministry',
-              },
-              {
-                src: '/images/haiti/haiti-leaders-red-ties.svg',
-                alt: 'Haitian ministry team in coordinated attire representing unity and excellence',
-                title: 'Committed Haiti Leadership Team',
-              },
-              {
-                src: '/images/haiti/haiti-altar-ministry.svg',
-                alt: 'Catalyst Ministries team members laying hands on Haitian believers during altar ministry',
-                title: 'Intercession at the Altar',
-              },
-              {
-                src: '/images/haiti/haiti-conference-side-angle.svg',
-                alt: 'Side angle view of Haiti outreach conference with attendees focused on teaching',
-                title: 'Teaching Moments that Transform',
-              },
-              {
-                src: '/images/haiti/haiti-conference-prayer-benches.svg',
-                alt: 'Haitian men kneeling at sanctuary benches in prayer during the Catalyst outreach',
-                title: 'Responding in Prayer',
-              },
-            ]}
-            columns={3}
-          />
         </div>
       </div>
 
