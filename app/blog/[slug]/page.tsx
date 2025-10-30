@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { generatePageMetadata } from '@/lib/metadata';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import ShareButton from '@/components/ShareButton';
@@ -66,67 +67,148 @@ const blogPosts: Record<string, {
   },
   
   'haiti-leadership-conference-2024': {
-    title: 'Haiti Leadership Conference 2024',
-    date: '2024-11-20',
+    title: 'Haiti Leadership Conference 2024 - A Historic Gathering',
+    date: '2024-10-28',
     author: 'Pastor Smitty',
     category: 'International Outreach',
-    excerpt: 'Over 1,500 pastors and leaders gathered for our annual leadership conference in Port-au-Prince. Powerful worship, teaching, and fellowship marked this year\'s event.',
+    excerpt: 'Over 1,500 pastors and leaders gathered for our annual leadership conference in Port-au-Prince. Powerful worship, teaching, and fellowship marked this year\'s historic event with incredible testimonies of God\'s faithfulness.',
     content: [
-      'What an incredible blessing to return to Haiti once again! This year\'s annual leadership conference exceeded all our expectations as over 1,500 pastors, church leaders, and ministry workers gathered in Port-au-Prince for three days of powerful teaching, worship, and fellowship.',
+      'What an incredible blessing to return to Haiti once again! This year\'s annual leadership conference exceeded all our expectations as over 1,500 pastors, church leaders, and ministry workers gathered in Port-au-Prince for three days of powerful teaching, worship, and fellowship in the face of unprecedented challenges.',
+      
+      '![Haiti Conference Crowd](/images/haiti/haiti-conference-crowd.jpg)',
+      
+      '**A Journey of Faith**',
+      
+      'Getting to Haiti this year required extraordinary faith and determination. With the security situation in Port-au-Prince being extremely volatile, many questioned whether we should go. But God made it clear - these pastors needed encouragement, and we needed to be there for them.',
+      
+      'The journey itself was a testimony. Our team had to navigate closed airports, roadblocks, and challenging logistics. But nothing could stop what God had planned for this gathering.',
       
       '**Conference Highlights**',
       
-      'This year\'s theme was "Leading with Faith in Difficult Times" – a message that resonated deeply with our Haitian brothers and sisters who face daily challenges yet continue to serve God with joy and dedication.',
+      'This year\'s theme was "Leading with Faith in Difficult Times" – a message that resonated deeply with our Haitian brothers and sisters who face daily challenges yet continue to serve God with unwavering joy and dedication.',
+      
+      '![Haiti Pastors Gathering](/images/haiti/haiti-pastors-gathering.jpg)',
       
       '**Day 1: Foundations of Leadership**',
-      '• Morning session: Biblical principles of servant leadership',
-      '• Afternoon workshops: Practical ministry strategies',
-      '• Evening: Powerful worship and testimonies',
+      '• Morning session: Biblical principles of servant leadership in times of crisis',
+      '• Afternoon workshops: Practical ministry strategies for challenging environments',
+      '• Evening: Powerful worship and testimonies that brought the house down',
+      '• Special recognition of pastors who traveled over 2 days to attend',
       
       '**Day 2: Ministry in Crisis**',
-      '• Teaching on maintaining faith during hardship',
-      '• Small group discussions and prayer',
-      '• Resource distribution: Bibles, teaching materials, and supplies',
+      '• Teaching on maintaining faith during hardship and persecution',
+      '• Small group discussions and extended prayer sessions',
+      '• Resource distribution: Bibles, teaching materials, and essential supplies',
+      '• Pastoral care sessions for leaders facing trauma and loss',
+      
+      '![Haiti Worship Crowd](/images/haiti/haiti-worship-crowd.jpg)',
       
       '**Day 3: Commissioning Service**',
-      '• Final teaching and encouragement',
-      '• Prayer and commissioning for the year ahead',
-      '• Communion service with all attendees',
+      '• Final teaching and encouragement for the year ahead',
+      '• Prayer and commissioning for spiritual breakthrough in Haiti',
+      '• Communion service with all 1,500+ attendees',
+      '• Special anointing service for pastors returning to difficult areas',
+      
+      '**The Power of Worship**',
+      
+      'If you\'ve never experienced worship in Haiti, you haven\'t truly experienced worship! Despite facing poverty, violence, and uncertainty, the Haitian church worships with a passion and authenticity that puts many American churches to shame.',
+      
+      '![Haiti Conference Attendees](/images/haiti/haiti-conference-attendees.jpg)',
+      
+      'The worship sessions were electric - thousands of voices lifted in praise, hands raised in surrender, tears flowing freely. This wasn\'t performance worship; this was the cry of desperate hearts finding hope in their Savior.',
       
       '**The Impact**',
       
-      'These conferences are more than events—they are lifelines for Haitian pastors who often minister in isolation with limited resources. Many travel for hours, some walking for days, just to attend.',
+      'These conferences are more than events—they are lifelines for Haitian pastors who often minister in isolation with limited resources. Many travel for hours, some walking for days through dangerous territory, just to attend.',
       
-      'One pastor shared: "This conference reminds me that I am not alone. I return to my village with renewed strength, fresh teaching, and the knowledge that my brothers and sisters around the world are praying for me."',
+      'One pastor from the northern mountains shared: "This conference reminds me that I am not alone. I return to my village with renewed strength, fresh teaching, and the knowledge that my brothers and sisters around the world are praying for me. Without this, I don\'t know if I could continue."',
+      
+      '![Haiti Leadership Team](/images/haiti/haiti-leadership-team.jpg)',
+      
+      '**Powerful Testimonies**',
+      
+      'Throughout the conference, we heard incredible testimonies:',
+      
+      '• A pastor whose church was destroyed by gang violence, yet he continues to meet under trees with his congregation',
+      '• A female pastor who walks 6 hours each way to minister in remote villages',
+      '• A young leader who started with 5 people and now pastors over 300',
+      '• Multiple reports of miraculous healings and divine protection',
+      '• Stories of gang members coming to Christ and leaving violence behind',
       
       '**Resources Distributed**',
       
-      'Thanks to generous donations, we were able to provide:',
-      '• 800 Bibles in Haitian Creole',
-      '• Leadership training materials',
-      '• Children\'s ministry resources',
-      '• Medical supplies for rural clinics',
-      '• Food supplies for orphanages',
+      'Thanks to generous donations from partners like you, we were able to provide:',
+      '• 1,200 Bibles in Haitian Creole (many pastors sharing one Bible with entire congregations)',
+      '• Comprehensive leadership training materials',
+      '• Children\'s ministry resources for Sunday schools',
+      '• Medical supplies for rural clinics serving remote villages',
+      '• Food supplies for orphanages caring for 500+ children',
+      '• Solar-powered audio Bibles for pastors in areas without electricity',
+      '• Emergency funds for pastors who lost homes to violence',
       
-      '**20+ Years of Partnership**',
+      '![Haiti Prayer Ministry](/images/haiti/haiti-prayer-ministry.jpg)',
       
-      'This marks our 20th year of consistent partnership with the Haitian church. What started as a small gathering has grown into a movement that impacts thousands of churches across Haiti.',
+      '**20+ Years of Covenant Partnership**',
       
-      'Through political upheaval, natural disasters, and economic challenges, we have remained committed to our Haitian family. This is not just a ministry trip—this is a covenant relationship.',
+      'This marks our 21st year of consistent partnership with the Haitian church. What started as a small gathering of 80 pastors has grown into a movement that impacts thousands of churches and hundreds of thousands of believers across Haiti.',
       
-      '**How You Can Help**',
+      'Through political upheaval, devastating earthquakes, hurricanes, cholera epidemics, economic collapse, and now gang violence, we have remained committed to our Haitian family. This is not just a ministry trip—this is a covenant relationship that will not be broken.',
       
-      'The needs in Haiti are immense, but so is the faith of the Haitian people. Your partnership makes events like this possible:',
-      '• $50 sponsors a pastor to attend the conference',
-      '• $100 provides Bibles and teaching materials',
-      '• $250 supports an orphanage for a month',
-      '• $500 funds a rural medical clinic',
+      'We\'ve seen Haiti through its darkest hours, and we\'ll be there when breakthrough comes. The faithfulness of the Haitian church inspires us and challenges our own faith.',
       
-      'To give specifically to our Haiti ministry, visit our website or call 239-247-2330.',
+      '**The Next Generation**',
       
-      'Thank you for standing with us and with our Haitian brothers and sisters. Together, we are making an eternal impact!',
+      'One of the most encouraging aspects of this year\'s conference was the large number of young pastors and leaders in attendance. The next generation of Haitian church leadership is rising up, and they are on fire for God!',
+      
+      'We established a special mentorship program connecting seasoned pastors with emerging leaders. This investment in the next generation will bear fruit for decades to come.',
+      
+      '**Security Challenges**',
+      
+      'We must be honest - this year was the most challenging yet. The security situation required constant prayer and divine protection. Several times during the conference, we heard gunfire in the distance. Yet not once did the worship stop. Not once did fear overtake faith.',
+      
+      'The Haitian pastors taught us what it means to truly trust God. They live daily with threats we can barely imagine, yet their faith is unshakeable. We came to encourage them, but they encouraged us far more.',
+      
+      '**Looking Ahead**',
+      
+      'Despite the challenges, we are already planning next year\'s conference. The need is too great, the harvest too plentiful, and the call too clear to stop now.',
+      
+      'We are exploring additional security measures and possibly expanding to multiple regional conferences to make attendance safer and more accessible for remote pastors.',
+      
+      '**How You Can Partner With Us**',
+      
+      'The needs in Haiti are immense, but so is the faith of the Haitian people and the power of our God. Your partnership makes events like this possible:',
+      
+      '• $50 sponsors a pastor to attend the conference (including travel and lodging)',
+      '• $100 provides Bibles and teaching materials for a rural church',
+      '• $250 supports an orphanage for a month (feeding 50+ children)',
+      '• $500 funds a rural medical clinic serving an entire region',
+      '• $1,000 sponsors the entire conference setup and logistics',
+      '• $2,500 provides emergency housing for pastors displaced by violence',
+      
+      'To give specifically to our Haiti ministry, contact us at 239-247-2330 or catalystministriesfl@gmail.com. Every dollar goes directly to Haiti ministry - no administrative overhead.',
+      
+      '**Pray for Haiti**',
+      
+      'Most importantly, please pray for Haiti:',
+      
+      '• Pray for peace and an end to gang violence',
+      '• Pray for spiritual breakthrough and revival',
+      '• Pray for the safety and provision of pastors and church leaders',
+      '• Pray for protection of orphans and vulnerable children',
+      '• Pray for wisdom for our next steps in this ministry',
+      '• Pray for the government and restoration of order',
+      
+      '**A Message from the Haitian Pastors**',
+      
+      '"Thank you for not forgetting us. Thank you for coming when others said it was too dangerous. Thank you for believing in the Haitian church. We are not a people of defeat - we are a people of faith! Together, we will see Haiti transformed by the Gospel!"',
+      
+      'Thank you for standing with us and with our Haitian brothers and sisters. Together, we are making an eternal impact! The best is yet to come for Haiti - we believe it, and we will see it!',
+      
+      '**Get Involved**',
+      
+      'Interested in joining us on a future Haiti trip? We take small teams several times per year. Contact us to learn more about how you can personally experience the faith and joy of the Haitian church.',
     ],
-    image: '/images/Haiti-Crusade-crowdn1.jpg',
+    image: '/images/haiti/haiti-conference-crowd.jpg',
   },
   
   'new-prison-volunteers-needed': {
@@ -387,7 +469,24 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <div className="prose prose-lg max-w-none">
             {post.content.map((paragraph, index) => {
               // Handle different content types
-              if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+              if (paragraph.startsWith('![') && paragraph.includes('](')) {
+                // Image
+                const match = paragraph.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+                if (match) {
+                  const [, alt, src] = match;
+                  return (
+                    <div key={index} className="my-8 rounded-xl overflow-hidden shadow-lg">
+                      <Image
+                        src={src}
+                        alt={alt || 'Haiti Conference'}
+                        width={1200}
+                        height={675}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  );
+                }
+              } else if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
                 // Heading
                 return (
                   <h2 key={index} className="text-2xl font-bold text-gray-900 mt-8 mb-4">

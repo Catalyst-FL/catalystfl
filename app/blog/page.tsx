@@ -25,13 +25,13 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: 'Haiti Leadership Conference 2024',
+    title: 'Haiti Leadership Conference 2024 - A Historic Gathering',
     slug: 'haiti-leadership-conference-2024',
-    excerpt: 'Over 1,500 pastors and leaders gathered for our annual leadership conference in Port-au-Prince. Powerful worship, teaching, and fellowship marked this year\'s event.',
-    date: '2024-11-20',
+    excerpt: 'Over 1,500 pastors and leaders gathered for our annual leadership conference in Port-au-Prince. Powerful worship, teaching, and fellowship marked this year\'s historic event with incredible testimonies of God\'s faithfulness.',
+    date: '2024-10-28',
     author: 'Pastor Smitty',
     category: 'International Outreach',
-    image: '/images/Haiti-Crusade-crowdn1.jpg',
+    image: '/images/haiti/haiti-conference-crowd.jpg',
     featured: true,
   },
   {
