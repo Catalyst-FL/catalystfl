@@ -69,16 +69,16 @@ export default function Header() {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center group">
-                <div className="relative">
+                <div className={`relative transition-all duration-300 ${
+                  scrolled ? 'w-14 h-14 sm:w-16 sm:h-16' : 'w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28'
+                }`}>
                   <Image 
                     src="/images/LOGO.png" 
                     alt="Catalyst Ministries Florida - Prison Ministry and Gospel Outreach"
-                    width={100}
-                    height={100}
-                    className={`object-contain transition-all duration-300 group-hover:scale-110 ${
-                      scrolled ? 'h-16 w-16 sm:h-20 sm:w-20' : 'h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28'
-                    }`}
+                    fill
+                    className="object-contain transition-all duration-300 group-hover:scale-110"
                     priority
+                    sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 112px"
                   />
                   {/* Glow effect on hover */}
                   <div className="absolute inset-0 bg-primary-400/0 group-hover:bg-primary-400/10 rounded-full blur-xl transition-all duration-300" />

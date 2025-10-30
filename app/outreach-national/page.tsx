@@ -2,7 +2,9 @@ import { generatePageMetadata } from '@/lib/metadata';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
 import ImageGallery from '@/components/ImageGallery';
-import { Home, Coffee, Users, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Home, Coffee, Users, MapPin, ExternalLink } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
   title: 'National Outreach',
@@ -191,9 +193,34 @@ export default function OutreachNational() {
                   </div>
                 </div>
               </div>
+              <div className="mt-8">
+                <Link
+                  href="https://www.integritychurchswfl.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
+                >
+                  Visit Integrity Church Website
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </Link>
+              </div>
             </div>
-            <div className="aspect-square rounded-lg bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-lg">
-              <Home className="h-32 w-32 text-white opacity-50" />
+            <div className="rounded-2xl bg-white p-8 shadow-xl flex items-center justify-center">
+              <Link
+                href="https://www.integritychurchswfl.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:scale-105 transition-transform duration-300"
+              >
+                <Image
+                  src="/images/integrity-church-logo.webp"
+                  alt="Integrity Church SWFL - Where real people with real faith really make a difference"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto max-w-md"
+                  priority
+                />
+              </Link>
             </div>
           </div>
         </div>
