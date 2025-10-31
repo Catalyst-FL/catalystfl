@@ -147,7 +147,7 @@ export default function Home() {
                 src="/images/inmate-praying.png"
                 alt="Inmate praying - lives transformed through prison ministry"
                 fill
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end z-10">

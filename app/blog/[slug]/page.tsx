@@ -217,15 +217,15 @@ const blogPosts: Record<
   },
 
   "ronald-rosier-testimony": {
-    title: "Testimony: Ronald Rosier — Never Forgotten",
+    title: "Testimony: Ron R — Never Forgotten",
     date: "2025-10-15",
-    author: "Ronald Rosier",
+    author: "Ron R",
     category: "Testimonies",
     excerpt:
-      "After 37 years incarcerated, Ronald shares a powerful testimony of God’s mercy, a favorable parole review, and the hope that came through Christ and the love shown by Catalyst — a reminder that we are never forgotten.",
+      "After 37 years incarcerated, Ron shares a powerful testimony of God’s mercy, a favorable parole review, and the hope that came through Christ and the love shown by Catalyst — a reminder that we are never forgotten.",
     content: [
       "**A Life Transformed by the Mercy of God**",
-      "My name is Ronald Rosier. I first met Catalyst Ministries in the early 2000s at GCI, and the message I heard there has never left me: YOU ARE NEVER FORGOTTEN. God will never leave or forsake us.",
+      "My name is Ron R. I first met Catalyst Ministries in the early 2000s at GCI, and the message I heard there has never left me: YOU ARE NEVER FORGOTTEN. God will never leave or forsake us.",
       "**A Hard Road**",
       "I have been incarcerated since 1988. At 21 years old, I was convicted of first-degree murder and sentenced to life with a 25-year mandatory before parole could even be considered. As of today, I have served 37 straight years.",
       "Over the years, I have lost both of my parents, a brother to suicide, and a sister to murder. While I still have siblings, some I have not heard from in many years. Yet, even in loss, God has surrounded me with a family in the Body of Christ.",
@@ -237,7 +237,7 @@ const blogPosts: Record<
       "Proverbs 21:1 reminds me: ‘The king’s heart is in the hand of the Lord… He turns it wherever He wishes.’ God truly turned hearts in my case.",
       "**Gratitude**",
       "I am not a bad person; I made tragic choices. But in Christ, I can begin again. I am a child of God. Catalyst’s ministry is not in vain — your love reached me and countless others. Thank you for never forgetting us.",
-      "— Ronald Rosier",
+      "— Ron R",
     ],
     image: "/images/ronaldRcoverphoto.png",
   },

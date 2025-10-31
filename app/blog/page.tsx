@@ -75,12 +75,12 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Testimony: Ronald Rosier — Never Forgotten",
+    title: "Testimony: Ron R — Never Forgotten",
     slug: "ronald-rosier-testimony",
     excerpt:
-      "After 37 years incarcerated, Ronald shares a powerful story of God’s mercy, a favorable parole review, and the hope found in Christ — a reminder that we are never forgotten.",
+      "After 37 years incarcerated, Ron shares a powerful story of God’s mercy, a favorable parole review, and the hope found in Christ — a reminder that we are never forgotten.",
     date: "2025-10-15",
-    author: "Ronald Rosier",
+    author: "Ron R",
     category: "Testimonies",
     image: "/images/ronaldRcoverphoto.png",
     featured: true,
