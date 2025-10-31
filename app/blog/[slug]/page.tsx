@@ -216,7 +216,7 @@ const blogPosts: Record<
     image: "/images/haiti/haiti-conference-crowd.jpg",
   },
 
-  "ronald-rosier-testimony": {
+  "ronal-r-testimony": {
     title: "Testimony: Ron R — Never Forgotten",
     date: "2025-10-15",
     author: "Ron R",

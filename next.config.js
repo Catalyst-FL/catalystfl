@@ -34,6 +34,15 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/ronald-rosier-testimony',
+        destination: '/blog/ronal-r-testimony',
+        permanent: true,
+      },
+    ];
+  },
 }
 
 module.exports = nextConfig
