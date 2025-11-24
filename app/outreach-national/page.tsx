@@ -301,13 +301,13 @@ export default function OutreachNational() {
                 title: "South Carolina Outreach",
               },
               {
-                src: "/images/south-carolina-3.jpg",
-                alt: "Community service in South Carolina",
+                src: "/images/Thanksgiving.jpg",
+                alt: "Thanksgiving serving ministry",
                 title: "Serving Local Communities",
               },
               {
-                src: "/images/south-carolina.jpg",
-                alt: "Door-to-door ministry in South Carolina",
+                src: "/images/smitty-in-cart.jpg",
+                alt: "Door-to-door ministry delivery",
                 title: "Door-to-Door Ministry",
               },
               {

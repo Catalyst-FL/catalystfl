@@ -183,8 +183,8 @@ export default function PrisonMinistry() {
                 title: 'Lives Transformed Through Prayer',
               },
               {
-                src: '/images/Christmas-2022-postcard-for-inmates.jpg',
-                alt: 'Christmas card sent to inmates',
+                src: '/images/writing-Christmas-cards.jpg',
+                alt: 'Writing Christmas cards to inmates',
                 title: 'Christmas Cards Bringing Hope',
               },
               {
