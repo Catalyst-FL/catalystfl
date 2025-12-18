@@ -173,6 +173,18 @@ export default function Header() {
               </Link>
             </div>
 
+            {/* Mobile Donate Button */}
+            <div className="lg:hidden flex items-center gap-2 mr-2">
+              <Link
+                href="https://www.powr.io/checkout_screen?unique_label=3aa1bc03_1745869827"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-green-600 to-green-700 text-white text-sm font-semibold shadow-md active:scale-95 transition-all duration-300"
+              >
+                Donate
+              </Link>
+            </div>
+
             {/* Mobile menu button */}
             <div className="lg:hidden">
               <button
