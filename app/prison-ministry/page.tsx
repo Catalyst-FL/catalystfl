@@ -60,6 +60,15 @@ export default function PrisonMinistry() {
         icon={<Heart className="h-8 w-8" />}
       />
 
+      {/* Ministry Video — first thing after the hero, on the same dark band, so
+          it reads as part of the header rather than another section to scroll
+          past. No poster: the still is a frame of the video itself. */}
+      <VideoSection
+        src="/recruiting_video_with_audio.mp4"
+        title="See Our Prison Ministry in Action"
+        description="A one-minute look at what our teams do behind prison walls — and how you can help or join us."
+      />
+
       {/* Mission Statement */}
       <div className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -88,15 +97,6 @@ export default function PrisonMinistry() {
           </div>
         </div>
       </div>
-
-      {/* Ministry Video — sits between the mission story and the ask, so the
-          video's "here's how to join" hands straight off to the team cards. */}
-      <VideoSection
-        src="/recruiting_video_with_audio.mp4"
-        title="See Our Prison Ministry in Action"
-        description="A one-minute look at what our teams do behind prison walls — and how you can help or join us."
-        poster="/images/Catalyst-people.jpg"
-      />
 
       {/* Ministry Teams */}
       <div className="bg-gray-50 py-16">
