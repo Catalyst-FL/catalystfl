@@ -222,8 +222,8 @@ export default function Home() {
               <h2 className="text-3xl font-extrabold text-white">Latest News</h2>
               <h3 className="mt-4 text-2xl font-bold text-primary-50">THE ONLY WAY</h3>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-50">
-                Our film is complete! A life-changing journey with a man who witnessed true miracles firsthand. 
-                Check out <a href="https://theonlywayfilm.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">theonlywayfilm.com</a> for viewing times and dates.
+                Our film is complete! A life-changing journey with a man who witnessed true miracles firsthand.
+                Visit <a href="https://theonlywayfilm.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">theonlywayfilm.com</a> to watch the full movie.
               </p>
               <div className="mt-8">
                 <Link
