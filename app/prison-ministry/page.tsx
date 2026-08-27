@@ -1,8 +1,17 @@
+import fs from 'fs';
+import path from 'path';
 import { generatePageMetadata } from '@/lib/metadata';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
 import ImageGallery from '@/components/ImageGallery';
+import VideoSection from '@/components/VideoSection';
 import { Users, Mail, Heart, Calendar } from 'lucide-react';
+
+// Drop the ministry video at public/prison-ministry.mp4 and the section below
+// renders itself on the next build. Until then it stays hidden, so the page
+// never ships an empty player.
+const VIDEO_SRC = '/prison-ministry.mp4';
+const hasVideo = fs.existsSync(path.join(process.cwd(), 'public', VIDEO_SRC));
 
 export const metadata = generatePageMetadata({
   title: 'Prison Ministry',
@@ -87,6 +96,17 @@ export default function PrisonMinistry() {
           </div>
         </div>
       </div>
+
+      {/* Ministry Video — sits between the mission story and the ask, so the
+          video's "here's how to join" hands straight off to the team cards. */}
+      {hasVideo && (
+        <VideoSection
+          src={VIDEO_SRC}
+          title="See Our Prison Ministry in Action"
+          description="A one-minute look at what our teams do behind prison walls — and how you can help or join us."
+          poster="/images/Catalyst-people.jpg"
+        />
+      )}
 
       {/* Ministry Teams */}
       <div className="bg-gray-50 py-16">

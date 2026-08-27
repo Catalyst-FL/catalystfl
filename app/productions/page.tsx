@@ -25,7 +25,7 @@ const onlyWay = {
   description:
     '"The Only Way" is a motion picture that takes you on a life changing journey with a man who witnessed true miracles firsthand. We believe this movie will reach an audience that may not know Jesus and touch a world that is hurting and searching for peace.',
   status:
-    "Our film is complete! Check out theonlywayfilm.com for viewing times and dates.",
+    "Our film is complete! Visit theonlywayfilm.com to watch the full movie.",
   icon: Film,
   available: true,
 };
@@ -83,7 +83,7 @@ export default function Productions() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center mt-4 text-green-700 font-semibold hover:text-green-800"
                 >
-                  Visit theonlywayfilm.com
+                  Watch at theonlywayfilm.com
                   <svg
                     className="ml-2 h-5 w-5"
                     fill="none"
