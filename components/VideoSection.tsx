@@ -5,9 +5,12 @@ interface VideoSectionProps {
   src: string;
   title: string;
   description?: string;
-  /** Still image shown before playback. Strongly recommended — without it the
-   *  player renders as a black box until the viewer presses play. */
+  /** Optional still image shown before playback. Leave unset to show a frame
+   *  of the video itself instead of a separate cover image. */
   poster?: string;
+  /** Seconds into the video to show as the still frame when no poster is set.
+   *  Bump this if the opening frame is a fade-in or otherwise blank. */
+  previewTime?: number;
   /** Optional WebVTT captions track, relative to /public. */
   captionsSrc?: string;
 }
@@ -17,10 +20,17 @@ export default function VideoSection({
   title,
   description,
   poster,
+  previewTime = 0.1,
   captionsSrc,
 }: VideoSectionProps) {
+  // With no poster, several browsers paint an empty black box until the viewer
+  // presses play — iOS Safari in particular. Pointing the source at a media
+  // fragment makes them seek to that timestamp and paint a real frame, which is
+  // what showing the video rather than a cover image actually requires.
+  const sourceSrc = poster ? src : `${src}#t=${previewTime}`;
+
   return (
-    <div className="bg-gradient-to-br from-primary-800 to-primary-900 py-16">
+    <div className="bg-primary-900 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <Play className="mx-auto h-10 w-10 text-primary-200" aria-hidden="true" />
@@ -34,8 +44,8 @@ export default function VideoSection({
           )}
         </div>
 
-        <div className="mx-auto max-w-4xl">
-          <div className="relative aspect-video overflow-hidden rounded-lg bg-black shadow-2xl">
+        <div className="mx-auto max-w-6xl">
+          <div className="relative aspect-video overflow-hidden rounded-xl bg-black shadow-2xl ring-1 ring-white/20">
             {/* Deliberately not autoplaying: this video has narration, so it
                 needs an explicit play. preload="metadata" keeps the page fast
                 by fetching only the header rather than the whole file. */}
@@ -46,7 +56,7 @@ export default function VideoSection({
               poster={poster}
               className="h-full w-full"
             >
-              <source src={src} type="video/mp4" />
+              <source src={sourceSrc} type="video/mp4" />
               {captionsSrc && (
                 <track
                   kind="captions"
