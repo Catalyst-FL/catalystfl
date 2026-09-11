@@ -42,7 +42,7 @@ const features = [
   },
   {
     name: 'National Outreach',
-    description: 'Serving the homeless, supporting Integrity Church, and reaching communities across America with the Gospel.',
+    description: 'Serving the homeless, partnering with SW Florida churches, and reaching communities across America with the Gospel.',
     icon: Users,
     href: '/outreach-national',
   },
