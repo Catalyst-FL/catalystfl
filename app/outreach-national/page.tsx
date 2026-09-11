@@ -33,6 +33,41 @@ const ministries = [
     ],
   },
   {
+    name: "Collier Juvenile Detention Center",
+    leaders: "Catalyst Team",
+    icon: Users,
+    description:
+      "Serving young boys and girls through weekly ministry, outdoor events, worship, and practical support.",
+    activities: [
+      "Weekly meetings with the young boys and girls",
+      "Catalyst Team participates in their outdoor events, ministering in song and with financial help",
+      "Provide essentials to the boys and girls when they are leaving",
+    ],
+  },
+  {
+    name: "Godly Accountability Partners (GAP) Weekly Bible Study",
+    leaders: "Pastor Smitty",
+    icon: Users,
+    description:
+      "Supporting the GAP weekly Bible study through worship, preaching, and facilitation.",
+    activities: [
+      "Pastor Smitty provides music for the morning worship",
+      "Pastor Smitty has preached at GAP",
+      "Pastor Smitty is one of the facilitators of the Bible study",
+    ],
+  },
+  {
+    name: "Integrity Homes and Youth Homes",
+    leaders: "Catalyst Team",
+    icon: Users,
+    description:
+      "Supporting local homes with practical assistance and ongoing care.",
+    activities: [
+      "Supporting the homes with practical needs",
+      "Helping with the maintenance of these homes",
+    ],
+  },
+  {
     name: "Breakfast in the Park",
     leaders: "Todd and Tracy Fitts",
     icon: Coffee,
