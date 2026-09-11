@@ -2,14 +2,12 @@ import { generatePageMetadata } from "@/lib/metadata";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import ImageGallery from "@/components/ImageGallery";
-import Image from "next/image";
-import Link from "next/link";
-import { Home, Coffee, Users, MapPin, ExternalLink } from "lucide-react";
+import { Coffee, Users, MapPin } from "lucide-react";
 
 export const metadata = generatePageMetadata({
   title: "National Outreach",
   description:
-    "Serving communities across America through Integrity Church, Breakfast in the Park for the homeless, and regional outreach programs.",
+    "Serving communities across America through SW Florida churches, homeless ministry, and regional outreach programs.",
   path: "/outreach-national",
   keywords: [
     "homeless ministry",
@@ -22,19 +20,16 @@ export const metadata = generatePageMetadata({
 
 const ministries = [
   {
-    name: "Integrity Church and Homes",
-    leaders: "Rob & Jill Sparrow",
-    icon: Home,
+    name: "SW Florida Churches",
+    leaders: "Catalyst Worship Team",
+    icon: Users,
     description:
-      "Pastors Smitty and Jeanne have been pastors at Integrity Church for the past 6 years.",
+      "Serving alongside churches throughout Southwest Florida and using worship, outreach, and practical service to share the Gospel.",
     activities: [
-      "Pastor Smitty plays guitar on the worship team",
-      "Maintains the Integrity Homes facilities",
-      "Pastor Jeanne performs and directs dramas",
-      "Part of the hospitality ministry",
-      "Team members serve as greeters and ushers",
-      "Supporting the food pantry ministry",
-      "Teaching weekly classes with residents",
+      "Catalyst worship team has ministered in numerous churches",
+      "Catalyst team has participated in outreach events",
+      "Team members serve as greeters and ushers in their home churches",
+      "Catalyst members are youth leaders at their home churches",
     ],
   },
   {
@@ -54,7 +49,7 @@ const ministries = [
   },
   {
     name: "South Carolina Outreach",
-    leaders: "Catalyst & Integrity Church Team",
+    leaders: "Catalyst Team",
     icon: MapPin,
     description: "Regional outreach bringing hope to underserved communities.",
     activities: [
@@ -186,78 +181,6 @@ export default function OutreachNational() {
         </div>
       </div>
 
-      {/* Integrity Church Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2 items-center">
-            <div>
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                Serving at Integrity Church
-              </h2>
-              <p className="mt-4 text-lg text-gray-600">
-                Many of our Catalyst team members are active at Integrity
-                Church, where Pastors Smitty and Jeanne serve as pastors. This
-                partnership allows us to impact our local community while
-                supporting the Integrity Homes program for those in need.
-              </p>
-              <div className="mt-6 space-y-4">
-                <div className="flex items-start">
-                  <Home className="h-6 w-6 text-primary-600 mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Integrity Homes
-                    </h4>
-                    <p className="text-gray-600">
-                      Supporting residents with weekly classes and practical
-                      care
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <Users className="h-6 w-6 text-primary-600 mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900">
-                      Community Service
-                    </h4>
-                    <p className="text-gray-600">
-                      Food pantry, hospitality, and welcoming newcomers
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <Link
-                  href="https://www.integritychurchswfl.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
-                >
-                  Visit Integrity Church Website
-                  <ExternalLink className="ml-2 h-5 w-5" />
-                </Link>
-              </div>
-            </div>
-            <div className="rounded-2xl bg-white p-8 shadow-xl flex items-center justify-center">
-              <Link
-                href="https://www.integritychurchswfl.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:scale-105 transition-transform duration-300"
-              >
-                <Image
-                  src="/images/integrity-church-logo.webp"
-                  alt="Integrity Church SWFL - Where real people with real faith really make a difference"
-                  width={400}
-                  height={400}
-                  className="w-full h-auto max-w-md"
-                  priority
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Vision for Expansion */}
       <div className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -314,11 +237,6 @@ export default function OutreachNational() {
                 src: "/images/south-carolina4.jpg",
                 alt: "Team prayer and outreach",
                 title: "Prayer Ministry",
-              },
-              {
-                src: "/images/rob-and-jill.jpg",
-                alt: "Rob and Jill Sparrow from Integrity Church",
-                title: "Integrity Church Partnership",
               },
             ]}
             columns={3}
