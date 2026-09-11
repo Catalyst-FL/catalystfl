@@ -6,7 +6,7 @@ import { Users, Heart, Globe, Calendar, MapPin, Mail } from 'lucide-react';
 const metrics = [
   {
     icon: Calendar,
-    value: 23,
+    value: 31,
     suffix: '+',
     label: 'Years of Ministry',
     description: 'Serving since 2003',
