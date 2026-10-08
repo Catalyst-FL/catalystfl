@@ -1,7 +1,7 @@
 import { generatePageMetadata } from '@/lib/metadata';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
-import { Music, Heart, Waves } from 'lucide-react';
+import { Music, Heart, Waves, ExternalLink } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
   title: 'Praise & Worship',
@@ -43,6 +43,30 @@ export default function Worship() {
                 the presence of God to others through our music.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Pastor Smitty Music */}
+      <div className="bg-gray-50 py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+            <Music className="mx-auto h-12 w-12 text-primary-600" />
+            <h2 className="mt-4 text-2xl font-bold text-gray-900">
+              Pastor Smitty&apos;s Music
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-lg text-gray-600">
+              Visit Pastor Smitty&apos;s music website to listen to his music and learn more about his ministry through song.
+            </p>
+            <a
+              href="https://smittytunes.website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-primary-700"
+            >
+              Visit Smitty Tunes
+              <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
       </div>
