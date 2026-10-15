@@ -83,7 +83,7 @@ const blogPosts = [
     date: "2024-10-05",
     author: "Jeanne Smith",
     category: "Prison Ministry",
-    image: "/images/25-Smitty-preaching.jpg",
+    image: "/images/writing-Christmas-cards.jpg",
     featured: false,
   },
   {
@@ -146,12 +146,19 @@ export default function Blog() {
                           src={post.image}
                           alt={post.title}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                       )}
-                      <div className="absolute top-4 left-4 z-10">
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-600 text-white shadow-lg">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
+                      <div className="absolute top-4 right-4 z-10">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-primary-700 shadow-lg">
                           Featured
+                        </span>
+                      </div>
+                      <div className="absolute bottom-4 left-4 z-10">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-600 text-white shadow-lg">
+                          {post.category}
                         </span>
                       </div>
                     </div>
@@ -214,14 +221,18 @@ export default function Blog() {
                           src={post.image}
                           alt={post.title}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, 33vw"
                         />
                       )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                      <div className="absolute bottom-3 left-3 z-10">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-semibold bg-white/95 text-primary-700 shadow">
+                          {post.category}
+                        </span>
+                      </div>
                     </div>
                     <div className="p-5">
-                      <div className="text-xs font-semibold text-primary-600 mb-2">
-                        {post.category}
-                      </div>
                       <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
                         {post.title}
                       </h3>
