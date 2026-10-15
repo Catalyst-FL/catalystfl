@@ -231,6 +231,48 @@ export default function OutreachInternational() {
         </div>
       </div>
 
+      {/* 2026 Haiti Leadership Conference */}
+      <div className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                Haiti Leadership Conference 2026
+              </h2>
+              <p className="mt-4 text-lg text-gray-600">
+                Continuing our long-standing partnership with church leaders in Haiti
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-primary-100 bg-primary-50 p-8">
+              <p className="text-lg leading-relaxed text-gray-700">
+                Our ministry partners at Église Sur Le Rocher Haiti held their 2026
+                Leaders Conference under the theme <strong>“Ebenezer — Thus Far the
+                Lord Has Helped Us”</strong>, based on 1 Samuel 7:12. The conference
+                continued through August 27, 2026 as leaders gathered for worship,
+                teaching, encouragement, and renewed commitment to serving Christ
+                faithfully in Haiti.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-gray-700">
+                The gathering came during a meaningful season for the church, which
+                also celebrated its 1989–2026 jubilee with thanksgiving, testimonies,
+                prayer for the nation, fellowship, and worship. Catalyst Ministries is
+                grateful for the faithfulness of our Haitian brothers and sisters and
+                for the privilege of supporting ministry leaders in Haiti year after year.
+              </p>
+              <div className="mt-6">
+                <a
+                  href="/blog/haiti-leadership-conference-2026"
+                  className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white hover:bg-primary-700 transition-colors"
+                >
+                  Read the 2026 Conference Story
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Latest Haiti Ministry Update */}
       <div className="bg-gradient-to-br from-gray-50 to-white py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -245,6 +287,23 @@ export default function OutreachInternational() {
             </div>
 
             <div className="p-4 sm:p-8">
+              <div className="mx-auto mb-8 max-w-3xl rounded-xl border border-gray-200 bg-gray-50 p-6">
+                <h3 className="text-xl font-bold text-gray-900">
+                  English Translation & Context
+                </h3>
+                <p className="mt-3 text-gray-700 leading-relaxed">
+                  <strong>Leaders Conference — Theme:</strong> “Ebenezer, Thus Far the
+                  Lord Has Helped Us,” from 1 Samuel 7:12. The post highlights the
+                  third day of the Église Sur Le Rocher Haiti leaders conference on
+                  August 27, 2026, a time of worship, biblical teaching, fellowship,
+                  and encouragement for Christian leaders serving in Haiti.
+                </p>
+                <p className="mt-3 text-sm text-gray-600">
+                  The original church post is shown below in its original language.
+                  This English summary is provided for our visitors.
+                </p>
+              </div>
+
               <div className="mx-auto w-full max-w-[500px] overflow-hidden rounded-lg">
                 <iframe
                   src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
