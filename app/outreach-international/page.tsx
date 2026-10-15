@@ -1,8 +1,7 @@
 import { generatePageMetadata } from "@/lib/metadata";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import Link from "next/link";
-import { Globe, Church, Heart, Gift, ArrowRight } from "lucide-react";
+import { Globe, Church, Heart, Gift } from "lucide-react";
 
 export const metadata = generatePageMetadata({
   title: "Haiti Missions & International Outreach - 20+ Years Serving",
@@ -232,93 +231,35 @@ export default function OutreachInternational() {
         </div>
       </div>
 
-      {/* Latest Haiti Ministry Report */}
+      {/* Latest Haiti Ministry Update */}
       <div className="bg-gradient-to-br from-gray-50 to-white py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-6">
               <h2 className="text-3xl font-extrabold text-white text-center">
-                Haiti Leadership Conference 2025 - A Historic Gathering
+                Haiti Ministry 2026 - Latest Update
               </h2>
               <p className="text-primary-100 text-center mt-2">
-                September 1, 2025
+                See the latest ministry update from our partners in Haiti
               </p>
             </div>
 
-            <article className="prose prose-lg mx-auto text-gray-700 p-8">
-              <p className="text-xl font-semibold text-gray-900 mb-6">
-                Over 1,500 pastors and leaders gathered in Port-au-Prince for
-                three days of powerful teaching, worship, and fellowship in the
-                face of unprecedented challenges.
-              </p>
-
-              <p>
-                Despite extreme security challenges and volatile conditions in
-                Port-au-Prince, God made it clear these pastors needed
-                encouragement. Our team navigated closed airports, roadblocks,
-                and challenging logistics to be there for this historic
-                gathering.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Conference Highlights
-              </h3>
-
-              <ul className="space-y-3">
-                <li>
-                  <strong>Theme:</strong> "Leading with Faith in Difficult
-                  Times"
-                </li>
-                <li>
-                  <strong>Attendance:</strong> 1,500+ pastors and church leaders
-                  from across Haiti
-                </li>
-                <li>
-                  <strong>Powerful Worship:</strong> Thousands of voices lifted
-                  in passionate, authentic praise
-                </li>
-                <li>
-                  <strong>Resources Distributed:</strong> 1,200 Bibles in
-                  Haitian Creole, leadership materials, medical supplies
-                </li>
-                <li>
-                  <strong>Testimonies:</strong> Stories of miraculous healings,
-                  divine protection, and gang members coming to Christ
-                </li>
-                <li>
-                  <strong>Impact:</strong> Pastors traveled for days through
-                  dangerous territory to attend
-                </li>
-              </ul>
-
-              <p className="mt-6">
-                The Haitian church's faith is unshakeable. Despite hearing
-                gunfire in the distance during the conference, the worship never
-                stopped. Fear never overtook faith. We came to encourage them,
-                but they encouraged us far more.
-              </p>
-
-              <div className="mt-8 text-center">
-                <Link
-                  href="/blog/haiti-leadership-conference-2025"
-                  className="inline-flex items-center px-6 py-3 rounded-full bg-primary-600 text-white font-semibold shadow-lg hover:bg-primary-700 hover:shadow-xl hover:scale-105 transition-all duration-300"
-                >
-                  Read the Full Story & See Photos
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+            <div className="p-4 sm:p-8">
+              <div className="mx-auto w-full max-w-[500px] overflow-hidden rounded-lg">
+                <iframe
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
+                  width="500"
+                  height="829"
+                  className="w-full max-w-full border-0"
+                  style={{ overflow: "hidden" }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Haiti Ministry 2026 Facebook update"
+                />
               </div>
-
-              <blockquote className="mt-8 border-l-4 border-primary-600 pl-4 italic text-gray-700">
-                "Thank you for not forgetting us. Thank you for coming when
-                others said it was too dangerous. Thank you for believing in the
-                Haitian church. We are not a people of defeat - we are a people
-                of faith! Together, we will see Haiti transformed by the
-                Gospel!"
-                <footer className="text-sm text-gray-600 mt-2">
-                  — Message from the Haitian Pastors
-                </footer>
-              </blockquote>
-            </article>
+            </div>
           </div>
         </div>
       </div>
