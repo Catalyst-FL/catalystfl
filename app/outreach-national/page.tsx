@@ -7,10 +7,9 @@ import { Coffee, Users, MapPin } from "lucide-react";
 export const metadata = generatePageMetadata({
   title: "National Outreach",
   description:
-    "Serving communities across America through SW Florida churches, homeless ministry, and regional outreach programs.",
+    "Serving communities across America through SW Florida churches, youth outreach, Bible study, practical support, and regional outreach programs.",
   path: "/outreach-national",
   keywords: [
-    "homeless ministry",
     "community outreach",
     "church ministry",
     "florida ministry",
@@ -68,21 +67,6 @@ const ministries = [
     ],
   },
   {
-    name: "Breakfast in the Park",
-    leaders: "Todd and Tracy Fitts",
-    icon: Coffee,
-    description:
-      "9 years of Saturday morning ministry to the homeless at Naples Park.",
-    activities: [
-      "Serve breakfast every Saturday",
-      "Worship service for the homeless",
-      "Provide clothes and toiletry items",
-      "Catalyst Band performances",
-      "Building relationships with the community",
-      "Showing the love of Christ in practical ways",
-    ],
-  },
-  {
     name: "South Carolina Outreach",
     leaders: "Catalyst Team",
     icon: MapPin,
@@ -118,8 +102,7 @@ export default function OutreachNational() {
             </h2>
             <p className="mt-6 text-lg text-gray-600">
               While our heart extends to international missions, we're deeply
-              committed to serving communities right here in America. From
-              weekly homeless ministry to church partnerships and regional
+              committed to serving communities right here in America. From church partnerships and youth ministry to Bible study and regional
               outreach, we're bringing the Gospel where it's needed most.
             </p>
           </div>
@@ -191,31 +174,6 @@ export default function OutreachNational() {
         </div>
       </div>
 
-      {/* Breakfast in the Park Highlight */}
-      <div className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-lg bg-gradient-to-r from-orange-500 to-red-600 px-8 py-12">
-            <div className="md:flex md:items-center md:justify-between">
-              <div className="flex-1">
-                <h2 className="text-3xl font-extrabold text-white">
-                  Breakfast in the Park
-                </h2>
-                <p className="mt-3 text-lg text-orange-100">
-                  Every Saturday morning for the past 9 years, our team has
-                  served breakfast and held worship services for the homeless
-                  community at Naples Park. This ministry, led by Todd and Tracy
-                  Fitts, embodies the heart of Christ by meeting practical needs
-                  while sharing the Gospel.
-                </p>
-              </div>
-              <div className="mt-8 md:mt-0 md:ml-8">
-                <Coffee className="h-32 w-32 text-white opacity-50" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Vision for Expansion */}
       <div className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -249,11 +207,6 @@ export default function OutreachNational() {
           <ImageGallery
             images={[
               {
-                src: "/images/breakfest-team.jpg",
-                alt: "Breakfast in the Park team serving the homeless",
-                title: "Breakfast in the Park Ministry",
-              },
-              {
                 src: "/images/south-carolina-1.jpg",
                 alt: "South Carolina outreach event",
                 title: "South Carolina Outreach",
@@ -282,7 +235,7 @@ export default function OutreachNational() {
       {/* CTA */}
       <CTASection
         title="Join Our National Outreach"
-        description="Whether serving the homeless weekly, supporting church ministries, or joining regional outreach trips, there's a place for you on our team."
+        description="Whether supporting church ministries, serving young people, joining Bible study outreach, or participating in regional trips, there's a place for you on our team."
         primaryButtonText="Get Involved"
         primaryButtonHref="/contact"
         secondaryButtonText="Learn More About Our Ministry"
