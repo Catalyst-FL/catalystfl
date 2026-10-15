@@ -46,6 +46,81 @@ const contactInfo = [
   },
 ];
 
+const credentialGroups = [
+  {
+    title: 'Prison Ministry Appreciation',
+    intro: 'Recognition from the Florida Department of Corrections for faithful volunteer service at Hernando Correctional Institution.',
+    items: [
+      {
+        name: 'Certificate of Appreciation — William Smith',
+        detail: 'Florida Department of Corrections · Hernando Correctional Institution · April 24, 2019',
+        src: '/images/credentials/fdc-william-smith-2019.jpg',
+        portrait: false,
+      },
+      {
+        name: 'Certificate of Appreciation — Jeanne Smith',
+        detail: 'Florida Department of Corrections · Hernando Correctional Institution · April 24, 2019',
+        src: '/images/credentials/fdc-jeanne-smith-2019.jpg',
+        portrait: false,
+      },
+    ],
+  },
+  {
+    title: 'Theological Education',
+    intro: 'Academic degrees awarded by Jacksonville Theological Seminary in 2002.',
+    items: [
+      {
+        name: 'Bachelor of Religious Arts in Biblical Studies — William H. Smith',
+        detail: 'Jacksonville Theological Seminary · September 30, 2002',
+        src: '/images/credentials/william-smith-bachelor-religious-arts.jpg',
+        portrait: false,
+      },
+      {
+        name: 'Master of Religious Arts in Christian Education — Jeanne M. Smith',
+        detail: 'Jacksonville Theological Seminary · September 30, 2002',
+        src: '/images/credentials/jeanne-smith-master-religious-arts.jpg',
+        portrait: false,
+      },
+    ],
+  },
+  {
+    title: 'Certificates of Ordination',
+    intro: 'Ordination to the work of the Gospel Ministry by Church on the Rock International.',
+    items: [
+      {
+        name: 'Certificate of Ordination — William Smith',
+        detail: 'Church on the Rock International · 2005',
+        src: '/images/credentials/william-smith-certificate-ordination.jpg',
+        portrait: false,
+      },
+      {
+        name: 'Certificate of Ordination — Jeanne Smith',
+        detail: 'Church on the Rock International · 2005',
+        src: '/images/credentials/jeanne-smith-certificate-ordination.jpg',
+        portrait: false,
+      },
+    ],
+  },
+  {
+    title: 'Recognition from Haiti',
+    intro: 'Original Honour and Merit plaques presented by the staff of Church on the Rock, Port-au-Prince, Haiti. Names below reproduce the inscription on each plaque.',
+    items: [
+      {
+        name: 'Honour and Merit — Mrs. Jeanne Williams',
+        detail: 'Staff, Church on the Rock · Port-au-Prince, Haiti',
+        src: '/images/credentials/haiti-jeanne-honour-merit.jpg',
+        portrait: true,
+      },
+      {
+        name: 'Honour and Merit — Smith Williams',
+        detail: 'Staff, Church on the Rock · Port-au-Prince, Haiti',
+        src: '/images/credentials/haiti-smitty-honour-merit.jpg',
+        portrait: true,
+      },
+    ],
+  },
+];
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -267,118 +342,72 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Ministry Credentials */}
-      <section className="bg-gradient-to-br from-slate-50 via-white to-primary-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* All certificates and recognition plaques are grouped here, not on the Prison Ministry page. */}
+      <section id="ministry-credentials" className="bg-gradient-to-b from-gray-50 to-white py-16 sm:py-20" aria-labelledby="credentials-title">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary-100 text-primary-700">
+            <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-primary-100 text-primary-700">
               <Award className="h-7 w-7" aria-hidden="true" />
-            </div>
-            <p className="mt-5 text-sm font-bold uppercase tracking-[0.2em] text-primary-700">
-              Ministry Credentials
-            </p>
-            <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Pastoral Credentials
+            </span>
+            <h2 id="credentials-title" className="mt-5 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Certificates, Credentials &amp; Recognition
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              Official Certificates of Ordination for Jeanne Smith and William Smith,
-              issued by Church on the Rock International.
+              A collection of the original documents recognizing the education, ordination,
+              and ministry service of Pastors William (Smitty) and Jeanne Smith.
+              Select any document to view it at full size.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-10 lg:grid-cols-2">
-            <article className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-xl shadow-gray-200/60">
-              <div className="bg-gradient-to-br from-gray-100 to-white p-4 sm:p-6">
-                <a
-                  href="/images/credentials/jeanne-smith-certificate-ordination.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block"
-                  aria-label="View Jeanne Smith Certificate of Ordination full size"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200 bg-[#f7f3e8] shadow-inner">
-                    <Image
-                      src="/images/credentials/jeanne-smith-certificate-ordination.jpg"
-                      alt="Certificate of Ordination for Jeanne Smith from Church on the Rock International"
-                      fill
-                      className="object-cover scale-[1.07] transition-transform duration-300 group-hover:scale-[1.09]"
-                      style={{ filter: 'brightness(1.06) contrast(1.1) saturate(0.78)' }}
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-                </a>
+          <div className="mt-12 space-y-14">
+            {credentialGroups.map((group) => (
+              <div key={group.title}>
+                <div className="mb-6 border-b border-primary-100 pb-5">
+                  <h3 className="text-2xl font-bold text-gray-900">{group.title}</h3>
+                  <p className="mt-2 max-w-3xl text-gray-600">{group.intro}</p>
+                </div>
+                <div className="grid gap-6 md:grid-cols-2">
+                  {group.items.map((item) => (
+                    <article key={item.src} className="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-shadow duration-200 hover:shadow-lg">
+                      <a
+                        href={item.src}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block bg-gray-100 p-4 sm:p-5 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                        aria-label={`View original document: ${item.name}`}
+                      >
+                        <div className={`relative mx-auto w-full overflow-hidden rounded-xl border border-gray-200 bg-[#f9f8f4] shadow-inner ${item.portrait ? 'h-80 sm:h-96' : 'h-64 sm:h-80'}`}>
+                          <Image
+                            src={item.src}
+                            alt={item.name}
+                            fill
+                            className="object-contain p-1.5 transition-transform duration-300 group-hover:scale-[1.025]"
+                            sizes="(max-width: 767px) 100vw, 50vw"
+                          />
+                        </div>
+                      </a>
+                      <div className="flex flex-1 flex-col p-5 sm:p-6">
+                        <h4 className="text-lg font-bold leading-snug text-gray-900">{item.name}</h4>
+                        <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.detail}</p>
+                        <a
+                          href={item.src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-5 inline-flex items-center gap-2 self-start rounded-lg border border-primary-200 bg-primary-50 px-4 py-2.5 text-sm font-semibold text-primary-800 transition-colors hover:bg-primary-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
+                        >
+                          View Full Document
+                          <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
               </div>
-              <div className="border-t border-gray-100 p-6 sm:p-8">
-                <p className="text-sm font-bold uppercase tracking-wider text-primary-700">
-                  Church on the Rock International
-                </p>
-                <h3 className="mt-2 text-2xl font-bold text-gray-900">
-                  Certificate of Ordination — Jeanne Smith
-                </h3>
-                <p className="mt-3 text-gray-600">
-                  Ordained to the work of the Gospel Ministry for the 2005 calendar year.
-                </p>
-                <a
-                  href="/images/credentials/jeanne-smith-certificate-ordination.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center font-semibold text-primary-700 transition-colors hover:text-primary-900"
-                >
-                  View Full Certificate
-                  <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
-                </a>
-              </div>
-            </article>
-
-            <article className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-xl shadow-gray-200/60">
-              <div className="bg-gradient-to-br from-gray-100 to-white p-4 sm:p-6">
-                <a
-                  href="/images/credentials/william-smith-certificate-ordination.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block"
-                  aria-label="View William Smith Certificate of Ordination full size"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200 bg-[#f7f3e8] shadow-inner">
-                    <Image
-                      src="/images/credentials/william-smith-certificate-ordination.jpg"
-                      alt="Certificate of Ordination for William Smith from Church on the Rock International"
-                      fill
-                      className="object-cover scale-[1.07] -rotate-[0.35deg] transition-transform duration-300 group-hover:scale-[1.09]"
-                      style={{ filter: 'brightness(1.06) contrast(1.1) saturate(0.78)' }}
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-                </a>
-              </div>
-              <div className="border-t border-gray-100 p-6 sm:p-8">
-                <p className="text-sm font-bold uppercase tracking-wider text-primary-700">
-                  Church on the Rock International
-                </p>
-                <h3 className="mt-2 text-2xl font-bold text-gray-900">
-                  Certificate of Ordination — William Smith
-                </h3>
-                <p className="mt-3 text-gray-600">
-                  Ordained to the work of the Gospel Ministry for the 2005 calendar year.
-                </p>
-                <a
-                  href="/images/credentials/william-smith-certificate-ordination.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center font-semibold text-primary-700 transition-colors hover:text-primary-900"
-                >
-                  View Full Certificate
-                  <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
-                </a>
-              </div>
-            </article>
+            ))}
           </div>
-
-          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary-100 bg-white/80 px-6 py-5 text-center shadow-sm backdrop-blur">
-            <p className="text-sm leading-relaxed text-gray-600">
-              Select either certificate to open a larger view of the original document.
-            </p>
-          </div>
+          <p className="mt-10 text-center text-sm text-gray-500">
+            Document names are transcribed from their original inscriptions; image files remain unaltered.
+          </p>
         </div>
       </section>
 
