@@ -26,6 +26,31 @@ export const metadata = generatePageMetadata({
 // Sample blog posts - in production, this would come from a CMS or database
 const blogPosts = [
   {
+    id: 7,
+    title: "Pastors Smitty & Jeanne Smith Featured on Voices in the Wilderness",
+    slug: "voices-in-the-wilderness-smitty-jeanne-smith",
+    excerpt:
+      "Pastors William (Smitty) and Jeanne Smith share their testimony and the story of Catalyst Ministries on Voices in the Wilderness. The television program is airing now, with the YouTube video expected in November.",
+    date: "2026-10-15",
+    author: "Catalyst Team",
+    category: "News",
+    image: "/images/LOGO.png",
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "Haiti Leadership Conference 2026 — Ebenezer",
+    slug: "haiti-leadership-conference-2026",
+    excerpt:
+      "Our ministry partners at Église Sur Le Rocher Haiti gathered leaders under the theme “Ebenezer — Thus Far the Lord Has Helped Us,” based on 1 Samuel 7:12.",
+    date: "2026-08-27",
+    author: "Catalyst Team",
+    category: "International Outreach",
+    image: "/images/haiti/haiti-conference-crowd.jpg",
+    featured: true,
+  },
+
+  {
     id: 1,
     title: '"The Only Way" Film Released',
     slug: "the-only-way-film-released",
