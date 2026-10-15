@@ -1,4 +1,5 @@
 import { generatePageMetadata } from "@/lib/metadata";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { Globe, Church, Heart, Gift } from "lucide-react";
@@ -261,12 +262,12 @@ export default function OutreachInternational() {
                 for the privilege of supporting ministry leaders in Haiti year after year.
               </p>
               <div className="mt-6">
-                <a
+                <Link
                   href="/blog/haiti-leadership-conference-2026"
                   className="inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white hover:bg-primary-700 transition-colors"
                 >
                   Read the 2026 Conference Story
-                </a>
+                </Link>
               </div>
             </div>
           </div>
