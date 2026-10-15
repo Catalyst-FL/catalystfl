@@ -278,12 +278,11 @@ export default function Contact() {
               Ministry Credentials
             </p>
             <h2 className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Certificates of Ordination
+              Pastoral Credentials
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              Pastor Jeanne Smith and Pastor William Smith were ordained to the work of the Gospel Ministry
-              by Church on the Rock International. These certificates are presented here with their official
-              names exactly as shown on the original credentials.
+              Official Certificates of Ordination for Jeanne Smith and William Smith,
+              issued by Church on the Rock International.
             </p>
           </div>
 
@@ -302,7 +301,8 @@ export default function Contact() {
                       src="/images/credentials/jeanne-smith-certificate-ordination.jpg"
                       alt="Certificate of Ordination for Jeanne Smith from Church on the Rock International"
                       fill
-                      className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                      className="object-cover scale-[1.07] transition-transform duration-300 group-hover:scale-[1.09]"
+                      style={{ filter: 'brightness(1.06) contrast(1.1) saturate(0.78)' }}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
@@ -344,7 +344,8 @@ export default function Contact() {
                       src="/images/credentials/william-smith-certificate-ordination.jpg"
                       alt="Certificate of Ordination for William Smith from Church on the Rock International"
                       fill
-                      className="object-contain p-2 transition-transform duration-300 group-hover:scale-[1.02]"
+                      className="object-cover scale-[1.07] -rotate-[0.35deg] transition-transform duration-300 group-hover:scale-[1.09]"
+                      style={{ filter: 'brightness(1.06) contrast(1.1) saturate(0.78)' }}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
@@ -375,8 +376,7 @@ export default function Contact() {
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-primary-100 bg-white/80 px-6 py-5 text-center shadow-sm backdrop-blur">
             <p className="text-sm leading-relaxed text-gray-600">
-              The certificate wording states that each was publicly set apart and ordained to the work of
-              <span className="font-semibold text-gray-900"> the Gospel Ministry</span>.
+              Select either certificate to open a larger view of the original document.
             </p>
           </div>
         </div>
