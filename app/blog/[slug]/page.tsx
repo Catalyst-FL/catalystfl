@@ -19,6 +19,59 @@ const blogPosts: Record<
     image?: string;
   }
 > = {
+  "voices-in-the-wilderness-smitty-jeanne-smith": {
+    title: "Pastors Smitty & Jeanne Smith Featured on Voices in the Wilderness",
+    date: "2026-10-15",
+    author: "Catalyst Team",
+    category: "News",
+    excerpt:
+      "Pastors William (Smitty) and Jeanne Smith share their testimony and the story of Catalyst Ministries on Voices in the Wilderness. The television program is airing now, with the YouTube video expected in November.",
+    content: [
+      "**Igniting Change Through Christ**",
+      "Pastors William (Smitty) and Jeanne Smith are being featured on the Christian television program Voices in the Wilderness in a two-part interview titled “Igniting Change Through Christ.”",
+      "During the interview, Smitty and Jeanne share their testimony, the story behind Catalyst Ministries, and the many ways the ministry serves people through prison outreach, teaching, preaching, prayer, music, drama, film, and encouragement.",
+      "**A Ministry Story Reaching a Wider Audience**",
+      "Voices in the Wilderness describes Pastors William and Jeanne Smith as the founders of Catalyst Ministries and highlights their commitment to equipping communities and reaching the lost and incarcerated with the Gospel of Jesus Christ.",
+      "The program is being broadcast during October 2026 on Flashpoint Television Network and additional stations and streaming outlets. Part 1 and Part 2 of “Igniting Change Through Christ” are being carried on participating networks throughout the month.",
+      "**YouTube Video Coming in November**",
+      "The Voices in the Wilderness YouTube release featuring Smitty and Jeanne is expected in November. We will add the full video directly to this page as soon as it is published.",
+      "In the meantime, you can visit [Voices in the Wilderness — Most Recent Guests](https://voicesinthewildernesstv.com/most-recent-guests) to read their feature on Pastors Smitty and Jeanne.",
+      "You can also visit the [Voices in the Wilderness YouTube channel](https://www.youtube.com/@VoicesTelevision) for their past interviews and upcoming releases.",
+      "**About Catalyst Ministries**",
+      "Catalyst Ministries was founded by Pastors William (Smitty) and Jeanne Smith. Their team shares the Gospel through teaching, preaching, testimonies, prayer, worship, drama, film, prison ministry, community outreach, and international missions.",
+      "We are grateful for the opportunity to share what God has done through this ministry with viewers across the country and around the world.",
+    ],
+    image: "/images/LOGO.png",
+  },
+
+  "haiti-leadership-conference-2026": {
+    title: "Haiti Leadership Conference 2026 — Ebenezer",
+    date: "2026-08-27",
+    author: "Catalyst Team",
+    category: "International Outreach",
+    excerpt:
+      "Our ministry partners at Église Sur Le Rocher Haiti gathered leaders under the theme “Ebenezer — Thus Far the Lord Has Helped Us,” based on 1 Samuel 7:12.",
+    content: [
+      "**Ebenezer — Thus Far the Lord Has Helped Us**",
+      "In August 2026, our ministry partners at Église Sur Le Rocher Haiti gathered Christian leaders for their annual Leaders Conference in Haiti. The conference theme was “Ebenezer — Thus Far the Lord Has Helped Us,” drawn from 1 Samuel 7:12.",
+      "The church’s original announcement was published in French. In English, the central message is: “Leaders Conference — Theme: Ebenezer, Thus Far the Lord Has Helped Us — 1 Samuel 7:12.” The August 27 post highlighted the third day of the 2026 gathering.",
+      "**A Time for Worship, Teaching, and Encouragement**",
+      "The conference brought leaders together for worship, biblical teaching, fellowship, encouragement, and renewed commitment to serving Christ faithfully in Haiti.",
+      "For Catalyst Ministries, leadership conferences like this are an important part of our long-standing relationship with the Haitian church. We are thankful for the pastors and ministry leaders who continue serving their communities with courage and faith.",
+      "**A Jubilee Season for Église Sur Le Rocher Haiti**",
+      "The conference took place during a historic season for Église Sur Le Rocher Haiti. On August 30, 2026, the church celebrated its 1989–2026 jubilee under the same Ebenezer theme.",
+      "The celebration brought together thousands of worshipers from surrounding communities for thanksgiving, testimonies about the church’s impact on families, prayer for the nation, fellowship, and joyful worship.",
+      "The message of the season was simple and powerful: through every challenge, God has remained faithful.",
+      "**English Translation of the 2026 Church Update**",
+      "“Ebenezer — Thus Far the Lord Has Helped Us.” The church gave thanks for God’s faithfulness, celebrated the testimony of generations, prayed for Haiti, and renewed its commitment to continue serving in the years ahead.",
+      "**Our Continuing Partnership in Haiti**",
+      "Catalyst Ministries has supported ministry in Haiti for more than two decades through leadership conferences, worship and preaching, practical projects, supplies, financial support, and ongoing relationships with local churches and ministry leaders.",
+      "We remain grateful for the privilege of standing with our brothers and sisters in Haiti. Their faith, perseverance, and love for Christ continue to inspire us.",
+      "Visit our [International Outreach page](/outreach-international) to learn more about our continuing work in Haiti.",
+    ],
+    image: "/images/haiti/haiti-conference-crowd.jpg",
+  },
+
   "the-only-way-film-released": {
     title: '"The Only Way" Film Released',
     date: "2024-12-15",
