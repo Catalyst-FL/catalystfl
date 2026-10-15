@@ -1,8 +1,9 @@
 import { generatePageMetadata } from "@/lib/metadata";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import { Globe, Church, Heart, Gift, Award } from "lucide-react";
+import { Globe, Church, Heart, Gift, Award, ExternalLink } from "lucide-react";
 
 export const metadata = generatePageMetadata({
   title: "Haiti Missions & International Outreach - 20+ Years Serving",
@@ -234,22 +235,63 @@ export default function OutreachInternational() {
 
       {/* Haiti Ministry Recognition */}
       <div className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
-            <Award className="mx-auto h-12 w-12 text-primary-600" />
-            <h2 className="mt-4 text-3xl font-extrabold text-gray-900">
-              Honored for Ministry in Haiti
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-              Church on the Rock in Port-au-Prince presented Honor and Merit
-              recognitions to <strong>Pastor William Smith</strong> and
-              <strong> Pastor Jeanne Smith</strong> in appreciation for their
-              ministry and service in Haiti.
-            </p>
-            <p className="mx-auto mt-3 max-w-3xl text-gray-600">
-              These recognitions represent years of friendship, worship,
-              practical service, and Gospel partnership with the Haitian church.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl bg-white p-6 sm:p-8 shadow-sm border border-gray-100">
+            <div className="text-center">
+              <Award className="mx-auto h-12 w-12 text-primary-600" />
+              <h2 className="mt-4 text-3xl font-extrabold text-gray-900">
+                Honoured for Ministry in Haiti
+              </h2>
+              <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
+                Church on the Rock in Port-au-Prince presented <strong>Honour and Merit</strong>
+                recognitions to Pastor William (Smitty) Smith and Pastor Jeanne Smith in
+                appreciation for their ministry and faithful service in Haiti.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-8 md:grid-cols-2">
+              {[
+                {
+                  src: '/images/credentials/haiti-smitty-honour-merit.jpg',
+                  title: 'Pastor Smitty — Honour and Merit',
+                  alt: 'Honour and Merit recognition presented for Pastor Smitty Smith ministry service in Haiti',
+                },
+                {
+                  src: '/images/credentials/haiti-jeanne-honour-merit.jpg',
+                  title: 'Pastor Jeanne — Honour and Merit',
+                  alt: 'Honour and Merit recognition presented for Pastor Jeanne Smith ministry service in Haiti',
+                },
+              ].map((award) => (
+                <div key={award.src} className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-white">
+                    <Image
+                      src={award.src}
+                      alt={award.alt}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-center text-lg font-bold text-gray-900">
+                    {award.title}
+                  </h3>
+                  <p className="mt-2 text-center text-sm text-gray-600">
+                    Presented by Church on the Rock staff in Port-au-Prince, Haiti.
+                  </p>
+                  <div className="mt-3 text-center">
+                    <a
+                      href={award.src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 hover:text-primary-800"
+                    >
+                      View Full Recognition
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
