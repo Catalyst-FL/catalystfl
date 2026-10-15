@@ -232,8 +232,9 @@ export default function PrisonMinistry() {
                 </div>
               </div>
               <p className="mt-3 max-w-3xl text-primary-50">
-                This is FDC's LiveScan Request Form, DC2-8068. Print one copy, complete it carefully,
-                and bring the paper form to your fingerprinting location.
+                After completing the online FDC application, download FDC's LiveScan Request Form (DC2-8068),
+                fill in your personal details, and bring the printed form to the fingerprinting office.
+                Do not send this completed form to Catalyst.
               </p>
               <a
                 href="https://www.fdc.myflorida.com/content/download/43635/file/LIVESCAN%20DC2-8068.pdf"
@@ -276,19 +277,79 @@ export default function PrisonMinistry() {
                     <p className="text-sm font-bold uppercase tracking-wide text-gray-600">TCN — Transaction Control Number</p>
                     <p className="mt-1 font-semibold text-gray-900">Leave blank unless FDC staff instruct you otherwise.</p>
                     <p className="mt-2 text-sm text-gray-600">
-                      The TCN is associated with the fingerprint transaction. After completing your application
-                      and fingerprinting, let Jeanne know so she can coordinate the TCN details with the chaplain.
+                      The TCN is generated when your fingerprints are submitted. Before you leave,
+                      ask the fingerprinting staff to write the full TCN clearly at the bottom of your
+                      Livescan form (or provide it on a receipt). Keep that number safe.
+                      Send the TCN to Jeanne so she can ask the chaplain to locate your submission in the system.
                     </p>
                   </div>
                 </div>
                 <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm leading-relaxed text-amber-950">
-                  <strong>Note:</strong> The printed Livescan form still says to call for an appointment.
-                  FDC's current volunteer guidance says appointments are <strong>not required</strong>;
-                  fingerprinting takes place during designated walk-in days and times.
+                  <strong>Before visiting Bonita:</strong> Confirm by phone that this office provides
+                  <strong> electronic LiveScan submission to FDC ORI FL037H75C</strong>, and will give
+                  you a TCN. Basic fingerprint cards are not sufficient for the FDC application.
+                  FDC facilities have their own scheduled walk-in fingerprinting days.
                 </p>
               </div>
             </div>
           </div>
+
+          {/* Local fingerprinting option for Catalyst volunteers near Naples / Bonita Springs */}
+          <section id="bonita-fingerprinting" className="mt-10 rounded-2xl border-2 border-primary-200 bg-primary-50 p-6 sm:p-8" aria-labelledby="bonita-fingerprinting-title">
+            <p className="text-sm font-bold uppercase tracking-wider text-primary-700">Local fingerprinting option — Bonita Springs / Naples</p>
+            <h3 id="bonita-fingerprinting-title" className="mt-2 text-2xl font-extrabold text-gray-900">
+              Lee County Sheriff&apos;s Office — 4th Precinct
+            </h3>
+            <address className="mt-3 not-italic text-lg font-semibold leading-relaxed text-gray-900">
+              8350 Hospital Drive, Suite 114<br />
+              Bonita Springs, FL 34135
+            </address>
+            <p className="mt-3 text-gray-700"><strong>Fingerprinting service hours:</strong> Monday–Friday, 8:00 AM–3:00 PM (closed on major holidays).</p>
+            <p className="mt-1 text-gray-700"><strong>Phone:</strong> <a href="tel:+12394771840" className="font-semibold text-primary-700 underline hover:text-primary-900">(239) 477-1840</a></p>
+            <p className="mt-3 text-sm leading-relaxed text-gray-700">
+              The Sheriff&apos;s Office lists general fingerprinting services at this location.
+              However, we have <strong>not confirmed</strong> that it can electronically submit an
+              <strong> FDC volunteer LiveScan</strong> using ORI <strong>FL037H75C</strong>.
+              Please call the office <strong>before traveling</strong> to verify that service,
+              the current fee, and whether staff can give you a TCN. Their general fingerprinting
+              listing shows a $5 fee, which may not cover the LiveScan submission required by FDC.
+            </p>
+            <div className="mt-5 rounded-xl border border-primary-200 bg-white p-4 sm:p-5">
+              <h4 className="font-bold text-gray-900">What to ask when you call</h4>
+              <p className="mt-2 leading-relaxed text-gray-700">
+                “I am applying to volunteer with the Florida Department of Corrections.
+                Can you take <strong>electronic LiveScan fingerprints</strong> and send them
+                to <strong>FDC ORI FL037H75C</strong>? Will I receive a <strong>TCN
+                (Transaction Control Number)</strong> after the scan?”
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                If the answer is no, do not get fingerprint cards instead. Use one of the
+                official FDC facility fingerprinting locations and confirm their walk-in schedule.
+              </p>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <a
+                href="https://www.sheriffleefl.org/fingerprint-services/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary-700 px-5 py-3 text-sm font-bold text-white hover:bg-primary-800"
+              >
+                Sheriff Fingerprinting Details <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.fdc.myflorida.com/volunteer-services/volunteers-and-programs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-primary-300 bg-white px-5 py-3 text-sm font-bold text-primary-800 hover:bg-primary-100"
+              >
+                Official FDC Fingerprinting Alternatives <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+            <p className="mt-4 text-sm text-gray-600">
+              Bring your completed Livescan form, a valid state-issued photo ID, and your Social Security card
+              as instructed by FDC. Keep the completed form and sensitive personal information with you.
+            </p>
+          </section>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
@@ -297,50 +358,62 @@ export default function PrisonMinistry() {
                 3. Complete Phase 1 training
               </h3>
               <p className="mt-3 leading-relaxed text-gray-700">
-                After you submit your online application, complete the required Basic Volunteer Training.
-                Return to the same FLVMS link if you need to resume. Watch your inbox and spam folder
-                for email from <strong>alerts@fdcbees.com</strong>.
+                Follow your email from FDC to complete Phase 1 volunteer training in VMS.
+                You can return to the application website to resume. Check your inbox and spam
+                folder for messages from <strong>alerts@fdcbees.com</strong>. You must also
+                complete fingerprinting before the final approval process.
               </p>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
               <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
                 <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
-                4. Go to fingerprinting
+                4. Get fingerprinted and obtain your TCN
               </h3>
               <p className="mt-3 leading-relaxed text-gray-700">
-                Check the current FDC statewide fingerprinting schedule for a facility near you and its
-                walk-in hours. <strong>Bring your printed, completed Livescan form, valid state-issued photo ID,
-                and Social Security card.</strong> You may ask the facility contact about its schedule before going.
+                Once your online application is submitted and the Bonita office confirms it
+                accepts FDC LiveScan, bring your printed form and IDs to the office above.
+                Tell staff the fingerprint submission must use <strong>ORI FL037H75C</strong>.
+                <strong> Before leaving, make sure the TCN is written at the bottom of your Livescan form
+                or printed on your receipt.</strong> A TCN is different from your volunteer PIN.
               </p>
               <a
-                href="https://www.fdc.myflorida.com/volunteer-services/volunteers-and-programs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:underline"
+                href="#bonita-fingerprinting"
+                className="mt-4 inline-flex items-center gap-2 font-semibold text-primary-700 hover:underline"
               >
-                Check FDC's current fingerprinting instructions <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                Bonita office address and call-ahead instructions
+              </a>
+            </div>
+            <div className="rounded-xl border border-primary-300 bg-primary-50 p-6">
+              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
+                5. Send the TCN number to Jeanne
+              </h3>
+              <p className="mt-3 leading-relaxed text-gray-700">
+                <strong>As soon as your fingerprints are done, send Jeanne your TCN number.</strong>
+                She can pass the number to the chaplain to check where your background
+                submission is in FDC's system. Send <strong>only your name, the TCN, and a
+                brief note that fingerprinting is complete</strong> — not your Social Security
+                number, ID, or a photo of the completed Livescan form.
+              </p>
+              <a
+                href="mailto:catalystministriesfl@gmail.com?subject=Volunteer%20Fingerprint%20TCN%20for%20Jeanne&body=Hi%20Jeanne%2C%0A%0AI%20completed%20my%20FDC%20volunteer%20application%20and%20fingerprinting.%0A%0AName%3A%20%0ATCN%20number%3A%20%0AFingerprinting%20date%3A%20%0A%0AThank%20you."
+                className="mt-5 inline-flex items-center gap-2 rounded-lg bg-primary-700 px-5 py-3 font-bold text-white transition-colors hover:bg-primary-800"
+              >
+                Email My TCN to Jeanne
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
               <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
                 <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
-                5. Background check and Phase 2
+                6. Finish background review, CJIS and PIN
               </h3>
               <p className="mt-3 leading-relaxed text-gray-700">
-                FDC reviews your fingerprint background check. If approved, you will receive instructions
-                to complete Phase 2 (CJIS) training. Follow those emailed instructions and save your confirmation.
-              </p>
-            </div>
-            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
-              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
-                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
-                6. Receive your PIN and coordinate with Jeanne
-              </h3>
-              <p className="mt-3 leading-relaxed text-gray-700">
-                FDC issues your volunteer PIN when the required CJIS training is completed and verified.
-                Let Jeanne at Catalyst know when you have finished your application and fingerprinting,
-                and again when you receive your PIN. She can coordinate with the chaplain about your
-                TCN and first facility visit. Do not visit until the facility confirms your approval and schedule.
+                After the background check is approved, FDC will email instructions for
+                Phase 2 (CJIS) training. Once CJIS is completed and verified, FDC issues
+                your <strong>volunteer PIN</strong>. Jeanne and the chaplain can then
+                coordinate facility access, orientation, and your first visit.
+                Do not visit until your approval and visit are confirmed.
               </p>
             </div>
           </div>
@@ -351,15 +424,17 @@ export default function PrisonMinistry() {
               Finished a step? Tell Jeanne
             </h3>
             <p className="mt-2 text-gray-700">
-              Please contact Catalyst to let Jeanne know your application and training progress.
-              You can mention your name and which steps you finished, but <strong>do not send your Social
-              Security number, a completed Livescan form, or copies of your ID by email.</strong>
+              <strong>The most important follow-up is sending Jeanne the TCN after fingerprinting</strong>
+              so she can have the chaplain check your submission status. You can also let her know
+              when you finish training or receive your volunteer PIN. Please send only the TCN and
+              the minimum information needed to identify your application, not your Social Security
+              number, ID, or completed Livescan form.
             </p>
             <a
-              href="mailto:catalystministriesfl@gmail.com?subject=FDC%20Volunteer%20Application%20Update"
+              href="mailto:catalystministriesfl@gmail.com?subject=Volunteer%20Fingerprint%20TCN%20for%20Jeanne&body=Hi%20Jeanne%2C%0A%0AI%20completed%20my%20fingerprinting%20for%20Catalyst.%0A%0AName%3A%20%0ATCN%20number%3A%20%0AFingerprinting%20date%3A%20%0A%0AThank%20you."
               className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary-700 px-5 py-3 font-bold text-white transition-colors hover:bg-primary-800"
             >
-              Email Catalyst an Update
+              Email Jeanne Your TCN
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </div>
