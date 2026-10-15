@@ -285,10 +285,10 @@ export default function PrisonMinistry() {
                   </div>
                 </div>
                 <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm leading-relaxed text-amber-950">
-                  <strong>Before visiting Bonita:</strong> Confirm by phone that this office provides
-                  <strong> electronic LiveScan submission to FDC ORI FL037H75C</strong>, and will give
-                  you a TCN. Basic fingerprint cards are not sufficient for the FDC application.
-                  FDC facilities have their own scheduled walk-in fingerprinting days.
+                  <strong>Bonita Springs fingerprinting:</strong> Bring your completed Livescan form to
+                  the Lee County Sheriff&apos;s Office. After the fingerprints are taken, make sure
+                  the <strong>TCN number is written at the bottom of your form</strong>. Keep the form
+                  and send the TCN number to Jeanne so she can follow up with the chaplain.
                 </p>
               </div>
             </div>
@@ -305,26 +305,19 @@ export default function PrisonMinistry() {
               Bonita Springs, FL 34135
             </address>
             <p className="mt-3 text-gray-700"><strong>Fingerprinting service hours:</strong> Monday–Friday, 8:00 AM–3:00 PM (closed on major holidays).</p>
-            <p className="mt-1 text-gray-700"><strong>Phone:</strong> <a href="tel:+12394771840" className="font-semibold text-primary-700 underline hover:text-primary-900">(239) 477-1840</a></p>
-            <p className="mt-3 text-sm leading-relaxed text-gray-700">
-              The Sheriff&apos;s Office lists general fingerprinting services at this location.
-              However, we have <strong>not confirmed</strong> that it can electronically submit an
-              <strong> FDC volunteer LiveScan</strong> using ORI <strong>FL037H75C</strong>.
-              Please call the office <strong>before traveling</strong> to verify that service,
-              the current fee, and whether staff can give you a TCN. Their general fingerprinting
-              listing shows a $5 fee, which may not cover the LiveScan submission required by FDC.
+            <p className="mt-3 text-gray-700">
+              This is the fingerprinting location Catalyst volunteers in the Bonita Springs
+              and Naples area regularly use. <strong>No call ahead is necessary.</strong>
+              After completing your FDC application, bring your completed Livescan form
+              and required identification during the hours above.
             </p>
             <div className="mt-5 rounded-xl border border-primary-200 bg-white p-4 sm:p-5">
-              <h4 className="font-bold text-gray-900">What to ask when you call</h4>
+              <h4 className="font-bold text-gray-900">Do not leave without your TCN number</h4>
               <p className="mt-2 leading-relaxed text-gray-700">
-                “I am applying to volunteer with the Florida Department of Corrections.
-                Can you take <strong>electronic LiveScan fingerprints</strong> and send them
-                to <strong>FDC ORI FL037H75C</strong>? Will I receive a <strong>TCN
-                (Transaction Control Number)</strong> after the scan?”
-              </p>
-              <p className="mt-2 text-sm text-gray-600">
-                If the answer is no, do not get fingerprint cards instead. Use one of the
-                official FDC facility fingerprinting locations and confirm their walk-in schedule.
+                Once the fingerprints are taken, the office will provide a
+                <strong> TCN (Transaction Control Number)</strong>. Make sure it is written
+                at the bottom of your Livescan form. <strong>Send that number to Jeanne</strong>
+                so she can ask the chaplain to check where your application is in the system.
               </p>
             </div>
             <div className="mt-5 flex flex-wrap gap-3">
@@ -342,7 +335,7 @@ export default function PrisonMinistry() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-primary-300 bg-white px-5 py-3 text-sm font-bold text-primary-800 hover:bg-primary-100"
               >
-                Official FDC Fingerprinting Alternatives <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                FDC Volunteer Information <ExternalLink className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-600">
@@ -370,17 +363,16 @@ export default function PrisonMinistry() {
                 4. Get fingerprinted and obtain your TCN
               </h3>
               <p className="mt-3 leading-relaxed text-gray-700">
-                Once your online application is submitted and the Bonita office confirms it
-                accepts FDC LiveScan, bring your printed form and IDs to the office above.
-                Tell staff the fingerprint submission must use <strong>ORI FL037H75C</strong>.
-                <strong> Before leaving, make sure the TCN is written at the bottom of your Livescan form
-                or printed on your receipt.</strong> A TCN is different from your volunteer PIN.
+                After submitting your online application, take your completed Livescan form and required
+                identification to the Bonita Springs sheriff&apos;s office during its fingerprinting hours.
+                <strong> Before leaving, make sure your TCN number is written at the bottom of the
+                Livescan form.</strong> A TCN is different from your volunteer PIN.
               </p>
               <a
                 href="#bonita-fingerprinting"
                 className="mt-4 inline-flex items-center gap-2 font-semibold text-primary-700 hover:underline"
               >
-                Bonita office address and call-ahead instructions
+                Bonita office address and hours
               </a>
             </div>
             <div className="rounded-xl border border-primary-300 bg-primary-50 p-6">
