@@ -41,7 +41,7 @@ const blogPosts: Record<
       "Catalyst Ministries was founded by Pastors William (Smitty) and Jeanne Smith. Their team shares the Gospel through teaching, preaching, testimonies, prayer, worship, drama, film, prison ministry, community outreach, and international missions.",
       "We are grateful for the opportunity to share what God has done through this ministry with viewers across the country and around the world.",
     ],
-    image: "/images/LOGO.png",
+    image: "/images/catalyst-team.jpg",
   },
 
   "haiti-leadership-conference-2026": {
@@ -69,7 +69,7 @@ const blogPosts: Record<
       "We remain grateful for the privilege of standing with our brothers and sisters in Haiti. Their faith, perseverance, and love for Christ continue to inspire us.",
       "Visit our [International Outreach page](/outreach-international) to learn more about our continuing work in Haiti.",
     ],
-    image: "/images/LOGO.png",
+    image: "/images/Haiti-Crusade-crowdn1.jpg",
   },
 
   "the-only-way-film-released": {
@@ -564,7 +564,99 @@ export default async function BlogPost({
 
       {/* Content */}
       <article className="bg-white py-12">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {post.image && (
+            <div className="mb-10 overflow-hidden rounded-2xl bg-gray-100 shadow-xl">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 896px"
+                />
+              </div>
+              {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
+                <div className="border-t border-gray-100 bg-gray-50 px-5 py-3 text-center text-sm text-gray-600">
+                  Pastors Smitty and Jeanne Smith — Catalyst Ministries
+                </div>
+              )}
+              {slug === "haiti-leadership-conference-2026" && (
+                <div className="border-t border-gray-100 bg-gray-50 px-5 py-3 text-center text-sm text-gray-600">
+                  Haiti ministry — celebrating worship, leadership, and God&apos;s faithfulness
+                </div>
+              )}
+            </div>
+          )}
+
+          {slug === "haiti-leadership-conference-2026" && (
+            <section className="mb-12 rounded-2xl border border-primary-100 bg-gradient-to-br from-primary-50 to-white p-5 sm:p-8">
+              <div className="text-center mb-6">
+                <p className="text-sm font-bold uppercase tracking-wider text-primary-600">
+                  Direct from Haiti
+                </p>
+                <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
+                  2026 Conference Photos &amp; Update
+                </h2>
+                <p className="mx-auto mt-3 max-w-2xl text-gray-600">
+                  This is the original 2026 update from Église Sur Le Rocher Haiti.
+                  The Facebook post includes current conference photos and their message from the gathering.
+                </p>
+              </div>
+
+              <div className="mx-auto w-full max-w-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
+                <iframe
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
+                  width="500"
+                  height="829"
+                  className="block w-full max-w-full border-0"
+                  style={{ overflow: "hidden" }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Église Sur Le Rocher Haiti 2026 leadership conference Facebook post"
+                />
+              </div>
+            </section>
+          )}
+
+          {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
+            <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+              <p className="text-sm font-bold uppercase tracking-wider text-primary-600">
+                Television Feature
+              </p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900">
+                Igniting Change Through Christ
+              </h2>
+              <p className="mt-3 text-gray-700">
+                Voices in the Wilderness is featuring Pastors William (Smitty) and Jeanne Smith
+                during October 2026. Their official guest feature highlights Catalyst Ministries,
+                its prison ministry work, and the creative ways the team shares the Gospel through
+                music, drama, film, teaching, preaching, testimonies, and prayer.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a
+                  href="https://voicesinthewildernesstv.com/most-recent-guests"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-lg bg-primary-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-primary-700"
+                >
+                  See the Official Guest Feature
+                </a>
+                <a
+                  href="https://voicesinthewildernesstv.com/tv-schedule"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-lg border border-primary-200 bg-white px-5 py-3 font-semibold text-primary-700 transition-colors hover:bg-primary-50"
+                >
+                  View the TV Schedule
+                </a>
+              </div>
+            </section>
+          )}
+
           <div className="prose prose-lg max-w-none">
             {post.content.map((paragraph, index) => {
               // Handle different content types
