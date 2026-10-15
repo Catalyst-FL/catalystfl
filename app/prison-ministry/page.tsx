@@ -3,7 +3,7 @@ import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
 import ImageGallery from '@/components/ImageGallery';
 import VideoSection from '@/components/VideoSection';
-import { Users, Mail, Heart, Calendar } from 'lucide-react';
+import { Users, Mail, Heart, Calendar, Award } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
   title: 'Prison Ministry',
@@ -167,6 +167,31 @@ export default function PrisonMinistry() {
                 <strong>Impact Story:</strong> We received a letter from someone on "suicide watch" who 
                 planned on killing themselves but said when they received our Christmas card it made them 
                 change their mind. You know it is so much more than a small gesture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Correctional Ministry Recognition */}
+      <div className="bg-primary-50 py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl bg-white p-8 shadow-sm border border-primary-100">
+            <div className="text-center">
+              <Award className="mx-auto h-12 w-12 text-primary-600" />
+              <h2 className="mt-4 text-3xl font-extrabold text-gray-900">
+                Recognition for Faithful Service
+              </h2>
+              <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
+                On April 24, 2019, William Smith and Jeanne Smith were each
+                recognized for their vital volunteer service at Hernando
+                Correctional Institution&apos;s Faith &amp; Character Based
+                Program Facility in Spring Hill, Florida.
+              </p>
+              <p className="mx-auto mt-4 max-w-3xl text-gray-600">
+                The certificates of appreciation honor their work supporting
+                the Florida Department of Corrections&apos; vision of
+                “inspiring success by transforming one life at a time.”
               </p>
             </div>
           </div>
