@@ -1,10 +1,9 @@
 import { generatePageMetadata } from '@/lib/metadata';
-import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import CTASection from '@/components/CTASection';
 import ImageGallery from '@/components/ImageGallery';
 import VideoSection from '@/components/VideoSection';
-import { Users, Mail, Heart, Calendar, Award, FileText, Download, ExternalLink, CheckCircle2, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { Users, Mail, Heart, Calendar, FileText, Download, ExternalLink, CheckCircle2, AlertTriangle, ShieldCheck, ClipboardList, Printer, MailCheck, ArrowRight } from 'lucide-react';
 
 export const metadata = generatePageMetadata({
   title: 'Prison Ministry',
@@ -140,198 +139,277 @@ export default function PrisonMinistry() {
       </div>
 
 
-      {/* FDC Volunteer Application Guide */}
-      <section id="volunteer-application" className="bg-white py-16">
+      {/* Plain-language volunteer application and fingerprinting instructions */}
+      <section id="volunteer-application" className="bg-white py-16 sm:py-20" aria-labelledby="volunteer-guide-title">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            <ShieldCheck className="mx-auto h-14 w-14 text-primary-600" />
-            <h2 className="mt-4 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Become an Approved FDC Volunteer
+            <ShieldCheck className="mx-auto h-12 w-12 text-primary-600" aria-hidden="true" />
+            <p className="mt-4 text-sm font-bold uppercase tracking-wider text-primary-700">
+              New Volunteers — Start Here
+            </p>
+            <h2 id="volunteer-guide-title" className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Prison Ministry Volunteer Application
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Follow these steps carefully if you are applying to serve with Catalyst Ministries
-              inside Florida Department of Corrections facilities.
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              You do not apply through Catalyst's contact form. The Florida Department of Corrections (FDC)
+              handles applications, training, fingerprinting, background checks, and volunteer PIN numbers.
+              Follow the steps below and let Jeanne know as you make progress.
             </p>
           </div>
 
-          <div className="mt-10 rounded-2xl border-2 border-primary-200 bg-primary-50 p-6 sm:p-8">
-            <h3 className="text-xl font-bold text-primary-900">
-              Start here: use the online FDC application
-            </h3>
-            <p className="mt-2 text-gray-700">
-              We recommend using the online internet version of the Florida Volunteer Management
-              System rather than the mobile app, because the mobile version does not always work reliably.
-            </p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <a
-                href="https://fdcbees.com/vms/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-primary-700"
-              >
-                Start Online FDC Application
-                <ExternalLink className="h-4 w-4" />
-              </a>
-              <a
-                href="https://www.fdc.myflorida.com/volunteer-services/volunteers-and-programs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-primary-300 bg-white px-5 py-3 font-semibold text-primary-700 transition hover:bg-primary-50"
-              >
-                Current FDC Volunteer Instructions
-                <ExternalLink className="h-4 w-4" />
-              </a>
+          {/* Primary action — online, not the unreliable mobile app */}
+          <div className="mt-10 rounded-2xl border-2 border-primary-300 bg-primary-50 p-6 shadow-sm sm:p-8">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+              <div className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-primary-600 text-white">
+                <ClipboardList className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">1. Start the official online application</h3>
+                <p className="mt-3 leading-relaxed text-gray-700">
+                  Select <strong>“Online Internet: Home Page – FLVMS”</strong> on the FDC application site.
+                  This is the browser-based version, which Catalyst recommends instead of the mobile app.
+                  Fill in your own accurate personal information; do not submit sensitive details through Catalyst.
+                </p>
+                <a
+                  href="https://fdcbees.com/vms/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary-700 px-6 py-4 text-center text-base font-bold text-white shadow-sm transition-colors hover:bg-primary-800 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-primary-400 sm:w-auto"
+                >
+                  Open the Official FLVMS Application
+                  <ExternalLink className="h-5 w-5" aria-hidden="true" />
+                </a>
+                <p className="mt-3 text-sm text-gray-600">
+                  The application opens on an external FDC volunteer-system website.
+                  If you have already started, use the same site to return and finish training.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* Exactly what Catalyst applicants should select */}
           <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-6 sm:p-8">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="mt-1 h-6 w-6 flex-shrink-0 text-amber-600" />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Use these Catalyst answers when the application asks
-                </h3>
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-lg bg-white p-4">
-                    <p className="text-sm font-semibold text-gray-500">Role / Ministry</p>
-                    <p className="mt-1 font-bold text-gray-900">
-                      Pastor or Counselor with Catalyst Ministries
-                    </p>
+              <AlertTriangle className="mt-1 h-6 w-6 flex-none text-amber-700" aria-hidden="true" />
+              <div className="min-w-0 flex-1">
+                <h3 className="text-xl font-bold text-gray-900">Catalyst-specific choices for the application</h3>
+                <p className="mt-2 text-gray-700">
+                  Use these selections <strong>where the FDC application asks for them</strong>.
+                  Screen labels can vary. If the options differ, confirm with Jeanne before submitting.
+                </p>
+                <dl className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-lg border border-amber-100 bg-white p-4">
+                    <dt className="text-sm font-semibold text-gray-600">Role / ministry</dt>
+                    <dd className="mt-1 font-bold text-gray-900">Pastor or Counselor with Catalyst Ministries</dd>
                   </div>
-                  <div className="rounded-lg bg-white p-4">
-                    <p className="text-sm font-semibold text-gray-500">Volunteer Type</p>
-                    <p className="mt-1 font-bold text-gray-900">
-                      Regular Volunteer
-                    </p>
-                    <p className="mt-1 text-sm text-gray-600">
-                      If an older screen says “Full Time,” select that option. This is the volunteer
-                      level used for receiving a PIN number.
-                    </p>
+                  <div className="rounded-lg border border-amber-100 bg-white p-4">
+                    <dt className="text-sm font-semibold text-gray-600">Volunteer type</dt>
+                    <dd className="mt-1 font-bold text-gray-900">Regular Volunteer</dd>
+                    <dd className="mt-1 text-sm text-gray-600">May be called “Full Time” on an older screen.</dd>
                   </div>
-                  <div className="rounded-lg bg-white p-4">
-                    <p className="text-sm font-semibold text-gray-500">Program / Service Area</p>
-                    <p className="mt-1 font-bold text-gray-900">Chapel</p>
+                  <div className="rounded-lg border border-amber-100 bg-white p-4">
+                    <dt className="text-sm font-semibold text-gray-600">Program / area</dt>
+                    <dd className="mt-1 font-bold text-gray-900">Chapel</dd>
                   </div>
-                  <div className="rounded-lg bg-white p-4">
-                    <p className="text-sm font-semibold text-gray-500">Facilities</p>
-                    <p className="mt-1 font-bold text-gray-900">
-                      DeSoto, Charlotte, and Avon Park
-                    </p>
-                    <p className="mt-1 text-sm text-gray-600">
-                      If the application asks for a home facility, choose <strong>DeSoto</strong>.
-                    </p>
+                  <div className="rounded-lg border border-amber-100 bg-white p-4">
+                    <dt className="text-sm font-semibold text-gray-600">Facilities to select</dt>
+                    <dd className="mt-1 font-bold text-gray-900">DeSoto, Charlotte, and Avon Park</dd>
+                    <dd className="mt-1 text-sm text-gray-600">If asked for a home facility: <strong>DeSoto</strong>.</dd>
                   </div>
-                </div>
+                </dl>
               </div>
             </div>
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            {[
-              {
-                step: '1',
-                title: 'Complete the online application',
-                text: 'Open the FDC Volunteer Management System above and complete the application using the Catalyst-specific answers shown on this page.',
-              },
-              {
-                step: '2',
-                title: 'Complete Phase 1 training',
-                text: 'After submitting the application, complete the required Basic Volunteer Training. If you stop partway through, you can return to the application system and resume. Watch your email, including spam or junk folders, for FDC system messages.',
-              },
-              {
-                step: '3',
-                title: 'Print and complete the Livescan form',
-                text: 'Download the official Livescan form below. Complete your personal information privately. Do not email or submit your Social Security number through the Catalyst website. Leave the TCN field blank unless FDC or the chaplain tells you otherwise.',
-              },
-              {
-                step: '4',
-                title: 'Go for fingerprinting',
-                text: 'Use FDC’s current facility fingerprinting schedule. Bring the completed Livescan form, a valid state-issued photo ID, and your Social Security card. FDC’s current volunteer instructions use scheduled walk-in fingerprinting days.',
-              },
-              {
-                step: '5',
-                title: 'Background review and Phase 2 / CJIS',
-                text: 'After fingerprints and the background review are approved, FDC will send instructions for Phase 2 (CJIS) training. Save any completion certificate or confirmation for your records.',
-              },
-              {
-                step: '6',
-                title: 'Receive your volunteer PIN and contact us',
-                text: 'After the required training is verified, FDC will issue your Volunteer PIN. Let Jeanne at Catalyst Ministries know when you have completed the process so she can notify the chaplain. The chaplain can then assist with your TCN information and facility-specific next steps.',
-              },
-            ].map((item) => (
-              <div key={item.step} className="rounded-2xl border border-gray-200 bg-gray-50 p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary-600 text-lg font-bold text-white">
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
-                    <p className="mt-2 leading-relaxed text-gray-600">{item.text}</p>
-                  </div>
+          {/* Most-requested downloadable form */}
+          <div id="livescan-form" className="mt-12 overflow-hidden rounded-2xl border-2 border-primary-200 bg-white shadow-lg">
+            <div className="bg-gradient-to-r from-primary-700 to-primary-900 px-6 py-7 text-white sm:px-8">
+              <div className="flex flex-wrap items-center gap-3">
+                <Printer className="h-8 w-8" aria-hidden="true" />
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-primary-100">Required for fingerprinting</p>
+                  <h3 className="text-2xl font-extrabold sm:text-3xl">2. Download and print the Livescan form</h3>
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <FileText className="h-9 w-9 text-primary-600" />
-              <h3 className="mt-3 text-xl font-bold text-gray-900">FDC Volunteer Checklist</h3>
-              <p className="mt-2 text-gray-600">
-                Review the official checklist for the application, training, fingerprinting,
-                background screening, CJIS training, PIN number, and first facility visit.
-              </p>
-              <a
-                href="https://www.fdc.myflorida.com/content/download/1480/file/checklist%20for%20becoming%20a%20FDC%20volunteer%2C%20REVISED%20PDF.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 font-semibold text-primary-700 hover:text-primary-800"
-              >
-                <Download className="h-5 w-5" />
-                Open / Download Checklist
-              </a>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <FileText className="h-9 w-9 text-primary-600" />
-              <h3 className="mt-3 text-xl font-bold text-gray-900">Official Livescan Form</h3>
-              <p className="mt-2 text-gray-600">
-                Print this form, complete it before fingerprinting, and bring it with your
-                identification and Social Security card as instructed by FDC.
+              <p className="mt-3 max-w-3xl text-primary-50">
+                This is FDC's LiveScan Request Form, DC2-8068. Print one copy, complete it carefully,
+                and bring the paper form to your fingerprinting location.
               </p>
               <a
                 href="https://www.fdc.myflorida.com/content/download/43635/file/LIVESCAN%20DC2-8068.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 font-semibold text-primary-700 hover:text-primary-800"
+                className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white px-6 py-3.5 text-center text-base font-bold text-primary-800 shadow-sm transition-colors hover:bg-primary-50 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
               >
-                <Download className="h-5 w-5" />
-                Open / Download Livescan Form
+                <Download className="h-5 w-5" aria-hidden="true" />
+                Open / Download Livescan PDF
+              </a>
+              <p className="mt-3 text-sm text-primary-100">
+                The official PDF opens in a new tab. Use its download or print option.
+                On a phone, save the PDF first and print it later.
+              </p>
+            </div>
+            <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-2">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900">How to fill out the Livescan form</h4>
+                <ol className="mt-4 list-decimal space-y-3 pl-5 text-gray-700 marker:font-bold marker:text-primary-700">
+                  <li><strong>Name:</strong> Last, first, middle, and suffix (if any), matching your ID.</li>
+                  <li><strong>Alias names:</strong> List other names used if applicable; otherwise follow the form's instructions.</li>
+                  <li><strong>Birth and description:</strong> Date of birth, indicated sex and race, height, weight, eye color, and hair color.</li>
+                  <li><strong>Birthplace:</strong> State and country of birth.</li>
+                  <li><strong>Occupation:</strong> Your accurate job title and work location.</li>
+                  <li><strong>Home address:</strong> Your physical street address and city, state, ZIP. <strong>No P.O. boxes.</strong></li>
+                  <li><strong>Social Security number:</strong> Fill in privately on your paper form, <em>not</em> on this website.</li>
+                </ol>
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-gray-900">Do not guess these two fields</h4>
+                <div className="mt-4 space-y-4">
+                  <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                    <p className="text-sm font-bold uppercase tracking-wide text-gray-600">ORI — Controlling Agency Identifier</p>
+                    <p className="mt-1 text-2xl font-extrabold tracking-wider text-primary-800">FL037H75C</p>
+                    <p className="mt-2 text-sm text-gray-600">
+                      This code is already printed on the FDC form. Do not change it; confirm that fingerprinting staff use the correct ORI.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                    <p className="text-sm font-bold uppercase tracking-wide text-gray-600">TCN — Transaction Control Number</p>
+                    <p className="mt-1 font-semibold text-gray-900">Leave blank unless FDC staff instruct you otherwise.</p>
+                    <p className="mt-2 text-sm text-gray-600">
+                      The TCN is associated with the fingerprint transaction. After completing your application
+                      and fingerprinting, let Jeanne know so she can coordinate the TCN details with the chaplain.
+                    </p>
+                  </div>
+                </div>
+                <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm leading-relaxed text-amber-950">
+                  <strong>Note:</strong> The printed Livescan form still says to call for an appointment.
+                  FDC's current volunteer guidance says appointments are <strong>not required</strong>;
+                  fingerprinting takes place during designated walk-in days and times.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
+                3. Complete Phase 1 training
+              </h3>
+              <p className="mt-3 leading-relaxed text-gray-700">
+                After you submit your online application, complete the required Basic Volunteer Training.
+                Return to the same FLVMS link if you need to resume. Watch your inbox and spam folder
+                for email from <strong>alerts@fdcbees.com</strong>.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
+                4. Go to fingerprinting
+              </h3>
+              <p className="mt-3 leading-relaxed text-gray-700">
+                Check the current FDC statewide fingerprinting schedule for a facility near you and its
+                walk-in hours. <strong>Bring your printed, completed Livescan form, valid state-issued photo ID,
+                and Social Security card.</strong> You may ask the facility contact about its schedule before going.
+              </p>
+              <a
+                href="https://www.fdc.myflorida.com/volunteer-services/volunteers-and-programs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:underline"
+              >
+                Check FDC's current fingerprinting instructions <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
+                5. Background check and Phase 2
+              </h3>
+              <p className="mt-3 leading-relaxed text-gray-700">
+                FDC reviews your fingerprint background check. If approved, you will receive instructions
+                to complete Phase 2 (CJIS) training. Follow those emailed instructions and save your confirmation.
+              </p>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+                <CheckCircle2 className="h-6 w-6 text-primary-700" aria-hidden="true" />
+                6. Receive your PIN and coordinate with Jeanne
+              </h3>
+              <p className="mt-3 leading-relaxed text-gray-700">
+                FDC issues your volunteer PIN when the required CJIS training is completed and verified.
+                Let Jeanne at Catalyst know when you have finished your application and fingerprinting,
+                and again when you receive your PIN. She can coordinate with the chaplain about your
+                TCN and first facility visit. Do not visit until the facility confirms your approval and schedule.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-xl border border-primary-200 bg-primary-50 p-6 sm:p-8">
+            <h3 className="flex items-center gap-2 text-xl font-bold text-gray-900">
+              <MailCheck className="h-6 w-6 text-primary-700" aria-hidden="true" />
+              Finished a step? Tell Jeanne
+            </h3>
+            <p className="mt-2 text-gray-700">
+              Please contact Catalyst to let Jeanne know your application and training progress.
+              You can mention your name and which steps you finished, but <strong>do not send your Social
+              Security number, a completed Livescan form, or copies of your ID by email.</strong>
+            </p>
+            <a
+              href="mailto:catalystministriesfl@gmail.com?subject=FDC%20Volunteer%20Application%20Update"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary-700 px-5 py-3 font-bold text-white transition-colors hover:bg-primary-800"
+            >
+              Email Catalyst an Update
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <FileText className="h-8 w-8 text-primary-600" aria-hidden="true" />
+              <h3 className="mt-3 text-lg font-bold text-gray-900">Official FDC Volunteer Checklist</h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                Print or save FDC's checklist. The plain-language guide above combines Catalyst's
+                specific selections with the current FDC volunteer instructions.
+              </p>
+              <a
+                href="https://www.fdc.myflorida.com/content/download/1480/file/checklist%20for%20becoming%20a%20FDC%20volunteer%2C%20REVISED%20PDF.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 font-bold text-primary-700 hover:underline"
+              >
+                <Download className="h-5 w-5" aria-hidden="true" /> Open / Print FDC Checklist
+              </a>
+            </div>
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <FileText className="h-8 w-8 text-primary-600" aria-hidden="true" />
+              <h3 className="mt-3 text-lg font-bold text-gray-900">Questions or missing FDC emails?</h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                First check your spam/junk folder and the FLVMS website. For official application or
+                training problems, contact FDC Volunteer Services.
+              </p>
+              <a
+                href="mailto:OPR-VolunteerServices@fdc.myflorida.com"
+                className="mt-4 inline-flex items-center gap-2 font-bold text-primary-700 hover:underline"
+              >
+                OPR-VolunteerServices@fdc.myflorida.com
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
           </div>
 
-          <div className="mt-8 rounded-xl border-l-4 border-amber-500 bg-amber-50 p-5">
-            <p className="font-semibold text-gray-900">
-              Important fingerprinting note
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700">
-              The Livescan form itself may still show older wording telling applicants to call for
-              an appointment. FDC’s current volunteer instructions state that fingerprinting
-              appointments are no longer required and facilities use designated walk-in days and
-              times. Always check the current FDC volunteer page before you go.
-            </p>
-          </div>
+          <p className="mt-8 rounded-xl border-l-4 border-emerald-500 bg-emerald-50 p-5 text-sm leading-relaxed text-emerald-950">
+            <strong>Privacy reminder:</strong> The Catalyst website does not collect fingerprint records,
+            Social Security numbers, or completed Livescan forms. Enter sensitive information only in
+            the official FDC system or on the printed Livescan form.
+          </p>
 
-          <div className="mt-6 flex items-start gap-3 rounded-xl bg-emerald-50 p-5">
-            <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-emerald-600" />
-            <p className="text-sm leading-relaxed text-emerald-950">
-              <strong>Your privacy:</strong> Catalyst Ministries does not need you to enter your
-              Social Security number, fingerprint information, or other sensitive Livescan data on
-              this website. Complete those items only through the official FDC process and on the
-              official form.
-            </p>
-          </div>
+          <p className="mt-6 text-center text-sm text-gray-600">
+            Looking for our pastors' diplomas, ordination certificates, and ministry awards?
+            <a href="/contact#ministry-credentials" className="ml-1 font-bold text-primary-700 hover:underline">
+              View all ministry credentials on the Contact page
+            </a>.
+          </p>
         </div>
       </section>
 
@@ -366,133 +444,6 @@ export default function PrisonMinistry() {
                 change their mind. You know it is so much more than a small gesture.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Correctional Ministry Recognition */}
-      <div className="bg-primary-50 py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-white p-6 sm:p-8 shadow-sm border border-primary-100">
-            <div className="text-center">
-              <Award className="mx-auto h-12 w-12 text-primary-600" />
-              <h2 className="mt-4 text-3xl font-extrabold text-gray-900">
-                Recognition for Faithful Prison Ministry Service
-              </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-                On April 24, 2019, William Smith and Jeanne Smith were each recognized
-                for their vital volunteer service at Hernando Correctional Institution&apos;s
-                Faith &amp; Character Based Program Facility in Spring Hill, Florida.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-8 md:grid-cols-2">
-              {[
-                {
-                  src: '/images/credentials/fdc-william-smith-2019.jpg',
-                  title: 'William Smith — Certificate of Appreciation',
-                  alt: 'Florida Department of Corrections Certificate of Appreciation presented to William Smith in 2019',
-                },
-                {
-                  src: '/images/credentials/fdc-jeanne-smith-2019.jpg',
-                  title: 'Jeanne Smith — Certificate of Appreciation',
-                  alt: 'Florida Department of Corrections Certificate of Appreciation presented to Jeanne Smith in 2019',
-                },
-              ].map((certificate) => (
-                <div key={certificate.src} className="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-white">
-                    <Image
-                      src={certificate.src}
-                      alt={certificate.alt}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
-                  <h3 className="mt-4 text-center font-bold text-gray-900">{certificate.title}</h3>
-                  <div className="mt-3 text-center">
-                    <a
-                      href={certificate.src}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 hover:text-primary-800"
-                    >
-                      View Full Certificate
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Pastoral Credentials */}
-      <div className="bg-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <Award className="mx-auto h-11 w-11 text-primary-600" />
-            <h2 className="mt-4 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Pastoral Credentials
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-              Ministry education and ordination credentials for Pastors William (Smitty) and Jeanne Smith.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                src: '/images/credentials/william-smith-bachelor-religious-arts.jpg',
-                title: 'William H. Smith',
-                subtitle: 'Bachelor of Religious Arts in Biblical Studies — Jacksonville Theological Seminary, 2002',
-                alt: 'William H. Smith Bachelor of Religious Arts in Biblical Studies diploma',
-              },
-              {
-                src: '/images/credentials/william-smith-certificate-ordination.jpg',
-                title: 'William Smith',
-                subtitle: 'Certificate of Ordination — Church on the Rock International, 2005',
-                alt: 'William Smith Certificate of Ordination from Church on the Rock International',
-              },
-              {
-                src: '/images/credentials/jeanne-smith-master-religious-arts.jpg',
-                title: 'Jeanne M. Smith',
-                subtitle: 'Master of Religious Arts in Christian Education — Jacksonville Theological Seminary, 2002',
-                alt: 'Jeanne M. Smith Master of Religious Arts in Christian Education diploma',
-              },
-              {
-                src: '/images/credentials/jeanne-smith-certificate-ordination.jpg',
-                title: 'Jeanne Smith',
-                subtitle: 'Certificate of Ordination — Church on the Rock International, 2005',
-                alt: 'Jeanne Smith Certificate of Ordination from Church on the Rock International',
-              },
-            ].map((credential) => (
-              <div key={credential.src} className="overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
-                <div className="relative aspect-[4/3] bg-white">
-                  <Image
-                    src={credential.src}
-                    alt={credential.alt}
-                    fill
-                    className="object-contain p-2"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-gray-900">{credential.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-gray-600">{credential.subtitle}</p>
-                  <a
-                    href={credential.src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-700 hover:text-primary-800"
-                  >
-                    View Full Size
-                    <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
