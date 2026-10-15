@@ -2,7 +2,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import { Globe, Church, Heart, Gift } from "lucide-react";
+import { Globe, Church, Heart, Gift, Award } from "lucide-react";
 
 export const metadata = generatePageMetadata({
   title: "Haiti Missions & International Outreach - 20+ Years Serving",
@@ -228,6 +228,28 @@ export default function OutreachInternational() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Haiti Ministry Recognition */}
+      <div className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl bg-white p-8 shadow-sm border border-gray-100 text-center">
+            <Award className="mx-auto h-12 w-12 text-primary-600" />
+            <h2 className="mt-4 text-3xl font-extrabold text-gray-900">
+              Honored for Ministry in Haiti
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
+              Church on the Rock in Port-au-Prince presented Honor and Merit
+              recognitions to <strong>Pastor William Smith</strong> and
+              <strong> Pastor Jeanne Smith</strong> in appreciation for their
+              ministry and service in Haiti.
+            </p>
+            <p className="mx-auto mt-3 max-w-3xl text-gray-600">
+              These recognitions represent years of friendship, worship,
+              practical service, and Gospel partnership with the Haitian church.
+            </p>
           </div>
         </div>
       </div>
