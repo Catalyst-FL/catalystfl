@@ -34,7 +34,7 @@ const blogPosts = [
     date: "2026-10-15",
     author: "Catalyst Team",
     category: "News",
-    image: "/images/LOGO.png",
+    image: "/images/catalyst-team.jpg",
     featured: true,
   },
   {
@@ -46,7 +46,7 @@ const blogPosts = [
     date: "2026-08-27",
     author: "Catalyst Team",
     category: "International Outreach",
-    image: "/images/LOGO.png",
+    image: "/images/Haiti-Crusade-crowdn1.jpg",
     featured: true,
   },
 
@@ -59,7 +59,7 @@ const blogPosts = [
     date: "2024-12-15",
     author: "Catalyst Team",
     category: "Productions",
-    image: "/images/LOGO.png",
+    image: "/images/theonlywaymovieposter.png",
     featured: true,
   },
   {
@@ -95,7 +95,7 @@ const blogPosts = [
     date: "2024-09-12",
     author: "Todd Fitts",
     category: "National Outreach",
-    image: "/images/LOGO.png",
+    image: "/images/breakfast-park-team.jpg",
     featured: false,
   },
   {
