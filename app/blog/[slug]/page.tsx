@@ -747,6 +747,92 @@ export default async function BlogPost({
             )}
           </div>
 
+          {slug === "haiti-leadership-conference-2026" && (
+            <section className="mt-12 rounded-2xl border border-primary-100 bg-primary-50 p-5 sm:p-8">
+              <div className="mx-auto max-w-2xl text-center">
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary-600">
+                  From Haiti
+                </p>
+                <h2 className="mt-2 text-2xl font-bold text-gray-900">
+                  See the Original 2026 Conference Post
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  The Facebook post below is from Église Sur Le Rocher Haiti and
+                  includes the original 2026 conference photographs. The post remains
+                  in its original language; the article above provides the English
+                  translation and context.
+                </p>
+              </div>
+              <div className="mx-auto mt-6 w-full max-w-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
+                <iframe
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
+                  width="500"
+                  height="829"
+                  className="w-full max-w-full border-0"
+                  style={{ overflow: "hidden" }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Église Sur Le Rocher Haiti 2026 leadership conference Facebook post"
+                />
+              </div>
+            </section>
+          )}
+
+          {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
+            <section className="mt-12 overflow-hidden rounded-2xl bg-gradient-to-br from-slate-950 via-primary-950 to-primary-800 text-white shadow-xl">
+              <div className="grid items-center gap-0 md:grid-cols-2">
+                <div className="relative min-h-[280px]">
+                  <Image
+                    src="/images/catalyst-team.jpg"
+                    alt="Catalyst Ministries team"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-slate-950/60" />
+                </div>
+                <div className="p-7 sm:p-9">
+                  <p className="text-sm font-semibold uppercase tracking-wider text-primary-200">
+                    Voices in the Wilderness TV
+                  </p>
+                  <h2 className="mt-2 text-2xl font-bold">
+                    Igniting Change Through Christ
+                  </h2>
+                  <p className="mt-4 text-primary-50">
+                    The two-part interview features Pastors William (Smitty) and
+                    Jeanne Smith sharing their testimony, prison ministry, and the
+                    creative ways Catalyst presents the Gospel through music, drama,
+                    film, teaching, preaching, prayer, and encouragement.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <a
+                      href="https://voicesinthewildernesstv.com/most-recent-guests"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg bg-white px-5 py-2.5 font-semibold text-primary-800 transition hover:bg-primary-50"
+                    >
+                      See the Guest Feature
+                    </a>
+                    <a
+                      href="https://voicesinthewildernesstv.com/tv-schedule"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg border border-white/30 px-5 py-2.5 font-semibold text-white transition hover:bg-white/10"
+                    >
+                      View TV Schedule
+                    </a>
+                  </div>
+                  <p className="mt-4 text-sm text-primary-200">
+                    We&apos;ll add the YouTube video here when the November release
+                    becomes available.
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Share Section */}
           <div className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center justify-between">
