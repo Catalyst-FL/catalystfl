@@ -69,7 +69,7 @@ const blogPosts: Record<
       "We remain grateful for the privilege of standing with our brothers and sisters in Haiti. Their faith, perseverance, and love for Christ continue to inspire us.",
       "Visit our [International Outreach page](/outreach-international) to learn more about our continuing work in Haiti.",
     ],
-    image: "/images/haiti/haiti-conference-crowd.jpg",
+    image: "/images/LOGO.png",
   },
 
   "the-only-way-film-released": {
