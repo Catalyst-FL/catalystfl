@@ -46,7 +46,7 @@ const blogPosts = [
     date: "2026-08-27",
     author: "Catalyst Team",
     category: "International Outreach",
-    image: "/images/Haiti-Crusade-crowdn1.jpg",
+    image: "/images/haiti/haiti-conference-crowd.jpg",
     featured: true,
   },
 
