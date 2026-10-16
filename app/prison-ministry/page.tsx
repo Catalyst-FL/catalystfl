@@ -471,12 +471,7 @@ export default function PrisonMinistry() {
             the official FDC system or on the printed Livescan form.
           </p>
 
-          <p className="mt-6 text-center text-sm text-gray-600">
-            Looking for our pastors' diplomas, ordination certificates, and ministry awards?
-            <a href="/contact#ministry-credentials" className="ml-1 font-bold text-primary-700 hover:underline">
-              View all ministry credentials on the Contact page
-            </a>.
-          </p>
+
         </div>
       </section>
 
