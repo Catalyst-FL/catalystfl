@@ -568,18 +568,36 @@ export default async function BlogPost({
           {post.image && (
             <div className="mb-10 overflow-hidden rounded-2xl bg-gray-100 shadow-xl">
               <div className="relative aspect-[16/9] w-full">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 896px"
-                />
+                {slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
+                  <div className="absolute inset-0 overflow-hidden bg-slate-900">
+                    <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
+                      <div
+                        role="img"
+                        aria-label="Voices in the Wilderness television studio backdrop"
+                        className="absolute inset-0"
+                        style={{ backgroundImage: "url('https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg')", backgroundSize: "100% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat" }}
+                      />
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 flex h-[58%] flex-col items-center justify-center bg-gradient-to-t from-slate-950 via-slate-900 to-slate-900/90 px-4 text-center text-white">
+                      <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary-200">Featured on Television</span>
+                      <span className="mt-2 text-2xl font-bold sm:text-4xl">Voices in the Wilderness</span>
+                      <span className="mt-2 text-base text-gray-200 sm:text-lg">Smitty &amp; Jeanne Smith — Igniting Change Through Christ</span>
+                    </div>
+                  </div>
+                ) : (
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 896px"
+                  />
+                )}
               </div>
               {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
                 <div className="border-t border-gray-100 bg-gray-50 px-5 py-3 text-center text-sm text-gray-600">
-                  Pastors Smitty and Jeanne Smith — Catalyst Ministries
+                  Official Voices in the Wilderness program backdrop · Smitty and Jeanne's episode: Igniting Change Through Christ
                 </div>
               )}
               {slug === "haiti-leadership-conference-2026" && (
