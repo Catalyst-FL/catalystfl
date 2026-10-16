@@ -70,7 +70,7 @@ const blogPosts = [
     date: "2026-10-16",
     author: "Catalyst Team",
     category: "International Outreach",
-    image: "",
+    image: "/images/haiti/church-on-the-rock-baptism-pool.jpg",
     featured: true,
   },
   {
@@ -128,19 +128,7 @@ export default function Blog() {
                     className="group relative bg-white rounded-xl shadow-lg overflow-hidden card-hover"
                   >
                     <div className="aspect-video relative overflow-hidden bg-gray-200">
-                      {post.slug === "church-on-the-rock-baptism" ? (
-                        <div className="absolute inset-0 overflow-hidden bg-slate-900">
-                          <iframe
-                            title="Church on the Rock baptism photos from the original Facebook post"
-                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=false&width=500"
-                            width="500"
-                            height="600"
-                            loading="lazy"
-                            className="pointer-events-none mx-auto block w-full border-0"
-                            style={{ maxWidth: 500 }}
-                          />
-                        </div>
-                      ) : post.slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
+                      {post.slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
                         <div className="absolute inset-0 overflow-hidden bg-slate-900">
                           <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
                             <div
