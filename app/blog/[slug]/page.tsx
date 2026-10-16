@@ -69,7 +69,7 @@ const blogPosts: Record<
       "We remain grateful for the privilege of standing with our brothers and sisters in Haiti. Their faith, perseverance, and love for Christ continue to inspire us.",
       "Visit our [International Outreach page](/outreach-international) to learn more about our continuing work in Haiti.",
     ],
-    image: "/images/Haiti-Crusade-crowdn1.jpg",
+    image: "/images/haiti/haiti-conference-crowd.jpg",
   },
 
   "the-only-way-film-released": {
@@ -377,42 +377,10 @@ export default async function BlogPost({
               )}
               {slug === "haiti-leadership-conference-2026" && (
                 <div className="border-t border-gray-100 bg-gray-50 px-5 py-3 text-center text-sm text-gray-600">
-                  Haiti ministry — celebrating worship, leadership, and God&apos;s faithfulness
+                  Church gathering in Haiti — archive photograph from 2025
                 </div>
               )}
             </div>
-          )}
-
-          {slug === "haiti-leadership-conference-2026" && (
-            <section className="mb-12 rounded-2xl border border-primary-100 bg-gradient-to-br from-primary-50 to-white p-5 sm:p-8">
-              <div className="text-center mb-6">
-                <p className="text-sm font-bold uppercase tracking-wider text-primary-600">
-                  Direct from Haiti
-                </p>
-                <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
-                  2026 Conference Photos &amp; Update
-                </h2>
-                <p className="mx-auto mt-3 max-w-2xl text-gray-600">
-                  This is the original 2026 update from Église Sur Le Rocher Haiti.
-                  The Facebook post includes current conference photos and their message from the gathering.
-                </p>
-              </div>
-
-              <div className="mx-auto w-full max-w-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
-                <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
-                  width="500"
-                  height="829"
-                  className="block w-full max-w-full border-0"
-                  style={{ overflow: "hidden" }}
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  title="Église Sur Le Rocher Haiti 2026 leadership conference Facebook post"
-                />
-              </div>
-            </section>
           )}
 
           {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
@@ -539,39 +507,6 @@ export default async function BlogPost({
               </ul>
             )}
           </div>
-
-          {slug === "haiti-leadership-conference-2026" && (
-            <section className="mt-12 rounded-2xl border border-primary-100 bg-primary-50 p-5 sm:p-8">
-              <div className="mx-auto max-w-2xl text-center">
-                <p className="text-sm font-semibold uppercase tracking-wider text-primary-600">
-                  From Haiti
-                </p>
-                <h2 className="mt-2 text-2xl font-bold text-gray-900">
-                  See the Original 2026 Conference Post
-                </h2>
-                <p className="mt-3 text-gray-600">
-                  The Facebook post below is from Église Sur Le Rocher Haiti and
-                  includes the original 2026 conference photographs. The post remains
-                  in its original language; the article above provides the English
-                  translation and context.
-                </p>
-              </div>
-              <div className="mx-auto mt-6 w-full max-w-[500px] overflow-hidden rounded-xl bg-white shadow-lg">
-                <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
-                  width="500"
-                  height="829"
-                  className="w-full max-w-full border-0"
-                  style={{ overflow: "hidden" }}
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  title="Église Sur Le Rocher Haiti 2026 leadership conference Facebook post"
-                />
-              </div>
-            </section>
-          )}
 
           {slug === "voices-in-the-wilderness-smitty-jeanne-smith" && (
             <section className="mt-12 overflow-hidden rounded-2xl bg-gradient-to-br from-slate-950 via-primary-950 to-primary-800 text-white shadow-xl">
