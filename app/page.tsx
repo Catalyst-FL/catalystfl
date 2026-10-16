@@ -185,18 +185,12 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900">William H. Smith</h3>
-              <p className="mt-2 font-semibold text-primary-600">
-                Bachelor of Religious Arts in Biblical Studies
-              </p>
               <p className="mt-2 text-gray-600">
                 Jacksonville Theological Seminary — September 30, 2002
               </p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900">Jeanne M. Smith</h3>
-              <p className="mt-2 font-semibold text-primary-600">
-                Master of Religious Arts in Christian Education
-              </p>
               <p className="mt-2 text-gray-600">
                 Jacksonville Theological Seminary — September 30, 2002
               </p>
