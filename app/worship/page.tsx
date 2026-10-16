@@ -48,9 +48,9 @@ export default function Worship() {
       </div>
 
       {/* Pastor Smitty Music */}
-      <section className="bg-gray-50 py-14 sm:py-16">
+      <section className="bg-gray-50 py-10 sm:py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-br from-gray-950 via-primary-900 to-primary-700 shadow-2xl">
+          <div className="relative mx-auto max-w-3xl overflow-hidden rounded-2xl bg-gradient-to-br from-gray-950 via-primary-900 to-primary-700 shadow-lg">
             {/* Decorative music artwork */}
             <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
               <div className="absolute -right-12 -top-12 h-56 w-56 rounded-full border border-white/10" />
@@ -61,24 +61,24 @@ export default function Worship() {
               <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
             </div>
 
-            <div className="relative grid gap-0 lg:grid-cols-[1.35fr_0.65fr]">
-              <div className="p-8 sm:p-10 lg:p-12">
+            <div className="relative grid gap-0 lg:grid-cols-[1.5fr_0.5fr]">
+              <div className="p-6 sm:p-8 lg:p-9">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-primary-50 backdrop-blur-sm">
                   <Mic2 className="h-4 w-4" aria-hidden="true" />
                   Pastor Smitty&apos;s Music
                 </div>
 
-                <h2 className="mt-5 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                   Smitty Tunes
                 </h2>
-                <p className="mt-2 text-lg font-semibold text-primary-100">
+                <p className="mt-2 text-base font-semibold text-primary-100">
                   Music ministry beyond the walls
                 </p>
-                <p className="mt-5 max-w-2xl text-lg leading-relaxed text-primary-50/90">
+                <p className="mt-4 max-w-2xl text-base leading-relaxed text-primary-50/90">
                   Visit Pastor Smitty&apos;s music website to listen to his music and learn more about his ministry through song.
                 </p>
 
-                <div className="mt-7 flex flex-wrap gap-3 text-sm text-primary-50">
+                <div className="mt-5 flex flex-wrap gap-2 text-sm text-primary-50">
                   <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
                     <Headphones className="h-4 w-4" aria-hidden="true" />
                     Listen Online
@@ -93,19 +93,19 @@ export default function Worship() {
                   href="https://smittytunes.website"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-2 rounded-xl bg-amber-400 px-7 py-3.5 text-base font-bold text-gray-950 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-300 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-200/40"
+                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-amber-400 px-6 py-3 text-base font-bold text-gray-950 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-300 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-200/40"
                 >
                   Visit Smitty Tunes
                   <ExternalLink className="h-5 w-5" aria-hidden="true" />
                 </a>
               </div>
 
-              <div className="relative hidden min-h-[330px] border-l border-white/10 lg:flex lg:items-center lg:justify-center">
-                <div className="relative flex h-52 w-52 items-center justify-center rounded-full border border-white/20 bg-white/[0.07] shadow-2xl backdrop-blur-sm">
+              <div className="relative hidden min-h-[260px] border-l border-white/10 lg:flex lg:items-center lg:justify-center">
+                <div className="relative flex h-40 w-40 items-center justify-center rounded-full border border-white/20 bg-white/[0.07] shadow-2xl backdrop-blur-sm">
                   <div className="absolute inset-5 rounded-full border border-white/10" />
-                  <div className="absolute inset-10 rounded-full border border-white/10" />
-                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-amber-400 shadow-lg">
-                    <Music className="h-12 w-12 text-gray-950" aria-hidden="true" />
+                  <div className="absolute inset-8 rounded-full border border-white/10" />
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-amber-400 shadow-lg">
+                    <Music className="h-10 w-10 text-gray-950" aria-hidden="true" />
                   </div>
                 </div>
               </div>
