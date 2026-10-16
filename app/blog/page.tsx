@@ -141,7 +141,23 @@ export default function Blog() {
                     className="group relative bg-white rounded-xl shadow-lg overflow-hidden card-hover"
                   >
                     <div className="aspect-video relative overflow-hidden bg-gray-200">
-                      {post.image && (
+                      {post.slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
+                        <div className="absolute inset-0 overflow-hidden bg-slate-900">
+                          <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
+                            <div
+                              role="img"
+                              aria-label="Voices in the Wilderness television program studio backdrop"
+                              className="absolute inset-0"
+                              style={{ backgroundImage: "url('https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg')", backgroundSize: "100% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat" }}
+                            />
+                          </div>
+                          <div className="absolute inset-x-0 bottom-0 flex h-[58%] flex-col items-center justify-center bg-gradient-to-t from-slate-950 via-slate-900 to-slate-900/90 px-4 text-center text-white">
+                            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary-200">Featured on Television</span>
+                            <span className="mt-2 text-xl font-bold sm:text-2xl">Voices in the Wilderness</span>
+                            <span className="mt-1 text-sm text-gray-200">Smitty &amp; Jeanne Smith</span>
+                          </div>
+                        </div>
+                      ) : post.image && (
                         <Image
                           src={post.image}
                           alt={post.title}
@@ -216,7 +232,23 @@ export default function Blog() {
                     className="group bg-white rounded-xl shadow-md overflow-hidden card-hover"
                   >
                     <div className="aspect-video relative overflow-hidden bg-gray-200">
-                      {post.image && (
+                      {post.slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
+                        <div className="absolute inset-0 overflow-hidden bg-slate-900">
+                          <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
+                            <div
+                              role="img"
+                              aria-label="Voices in the Wilderness television program studio backdrop"
+                              className="absolute inset-0"
+                              style={{ backgroundImage: "url('https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg')", backgroundSize: "100% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat" }}
+                            />
+                          </div>
+                          <div className="absolute inset-x-0 bottom-0 flex h-[58%] flex-col items-center justify-center bg-gradient-to-t from-slate-950 via-slate-900 to-slate-900/90 px-4 text-center text-white">
+                            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary-200">Featured on Television</span>
+                            <span className="mt-2 text-xl font-bold sm:text-2xl">Voices in the Wilderness</span>
+                            <span className="mt-1 text-sm text-gray-200">Smitty &amp; Jeanne Smith</span>
+                          </div>
+                        </div>
+                      ) : post.image && (
                         <Image
                           src={post.image}
                           alt={post.title}
