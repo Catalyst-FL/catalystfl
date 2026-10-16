@@ -66,7 +66,7 @@ const blogPosts = [
     id: 2,
     title: "Church on the Rock Baptism",
     slug: "church-on-the-rock-baptism",
-    excerpt: "A joyful celebration of baptism and faith at Church on the Rock in Haiti. See the original photos shared by the church.",
+    excerpt: "Against all odds of gang warfare, Church on the Rock in Haiti continues to advance the Kingdom of God. These precious souls were water baptized this past Saturday. We thank all of you who pray for our team, along with those who sow into the ministry. Joined with the Holy Spirit, we are producing fruit!",
     date: "2026-10-16",
     author: "Catalyst Team",
     category: "International Outreach",
