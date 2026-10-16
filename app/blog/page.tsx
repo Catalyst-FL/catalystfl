@@ -34,7 +34,7 @@ const blogPosts = [
     date: "2026-10-15",
     author: "Catalyst Team",
     category: "News",
-    image: "/images/catalyst-team.jpg",
+    image: "https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg",
     featured: true,
   },
   {
