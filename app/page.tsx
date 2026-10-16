@@ -182,7 +182,7 @@ export default function Home() {
               biblical education, ordination, and decades of hands-on ministry service.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900">William H. Smith</h3>
               <p className="mt-2 text-gray-600">
@@ -193,6 +193,15 @@ export default function Home() {
               <h3 className="text-xl font-bold text-gray-900">Jeanne M. Smith</h3>
               <p className="mt-2 text-gray-600">
                 Jacksonville Theological Seminary — September 30, 2002
+              </p>
+            </div>
+            <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900">William H. Smith</h3>
+              <p className="mt-2 font-semibold text-primary-600">
+                Certificate of Ordination
+              </p>
+              <p className="mt-2 text-gray-600">
+                Church on the Rock International — 2005
               </p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
