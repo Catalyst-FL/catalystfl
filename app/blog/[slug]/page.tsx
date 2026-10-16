@@ -129,6 +129,7 @@ const blogPosts: Record<
     author: "Catalyst Team",
     category: "International Outreach",
     excerpt: "Church on the Rock in Haiti celebrates water baptism.",
+    image: "/images/haiti/church-on-the-rock-baptism-pool.jpg",
     content: [
       "Against all odds of gang warfare, Church on the Rock in Haiti continues to advance the Kingdom of God. These precious souls were water baptized this past Saturday. We thank all of you who pray for our team, along with those who sow into the ministry. Joined with the Holy Spirit, we are producing fruit!",
       "— Jay Threadgill, October 1, sharing the Church on the Rock Haiti baptism celebration.",
@@ -374,24 +375,7 @@ export default async function BlogPost({
                   Official Voices in the Wilderness program backdrop · Smitty and Jeanne's episode: Igniting Change Through Christ
                 </div>
               )}
-              {slug === "church-on-the-rock-baptism" && (
-            <div className="mb-10 mx-auto max-w-[500px] overflow-hidden rounded-xl border border-gray-200 bg-gray-50 p-3 text-center">
-              <p className="mb-4 text-sm text-gray-600">Church on the Rock baptism photographs</p>
-              <iframe
-                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=false&width=500"
-                width="500"
-                height="520"
-                title="Church on the Rock baptism post"
-                className="w-full max-w-full border-0"
-                loading="lazy"
-                scrolling="no"
-                allowFullScreen
-              />
-              <a className="mt-3 inline-block font-semibold text-primary-700 underline" href="https://www.facebook.com/eglisesurlerocherhaiti/posts/pfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl" target="_blank" rel="noopener noreferrer">View original baptism photo on Facebook</a>
-            </div>
-          )}
-
-          {slug === "haiti-leadership-conference-2026" && (
+              {slug === "haiti-leadership-conference-2026" && (
                 <div className="border-t border-gray-100 bg-gray-50 px-5 py-3 text-center text-sm text-gray-600">
                   Haiti ministry — celebrating worship, leadership, and God&apos;s faithfulness
                 </div>
