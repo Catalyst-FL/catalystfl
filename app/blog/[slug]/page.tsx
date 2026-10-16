@@ -41,7 +41,7 @@ const blogPosts: Record<
       "Catalyst Ministries was founded by Pastors William (Smitty) and Jeanne Smith. Their team shares the Gospel through teaching, preaching, testimonies, prayer, worship, drama, film, prison ministry, community outreach, and international missions.",
       "We are grateful for the opportunity to share what God has done through this ministry with viewers across the country and around the world.",
     ],
-    image: "/images/catalyst-team.jpg",
+    image: "https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg",
   },
 
   "haiti-leadership-conference-2026": {
