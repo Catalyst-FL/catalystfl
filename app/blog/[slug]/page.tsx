@@ -513,8 +513,8 @@ export default async function BlogPost({
               <div className="grid items-center gap-0 md:grid-cols-2">
                 <div className="relative min-h-[280px]">
                   <Image
-                    src="/images/catalyst-team.jpg"
-                    alt="Catalyst Ministries team"
+                    src="/images/voices-smitty-jeanne-portrait.jpg"
+                    alt="Pastors Smitty and Jeanne Smith smiling together"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
