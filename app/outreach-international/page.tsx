@@ -275,55 +275,48 @@ export default function OutreachInternational() {
         </div>
       </div>
 
-      {/* Latest Haiti Ministry Update */}
-      <div className="bg-gradient-to-br from-gray-50 to-white py-16">
+      {/* Church on the Rock baptism pictures */}
+      <section className="bg-gradient-to-br from-gray-50 to-white py-16" aria-labelledby="haiti-baptism-title">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="overflow-hidden rounded-2xl bg-white shadow-xl">
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 px-8 py-6">
-              <h2 className="text-3xl font-extrabold text-white text-center">
-                Haiti Ministry 2026 - Latest Update
+              <h2 id="haiti-baptism-title" className="text-center text-3xl font-extrabold text-white">
+                Church on the Rock Baptism
               </h2>
-              <p className="text-primary-100 text-center mt-2">
-                See the latest ministry update from our partners in Haiti
-              </p>
             </div>
-
             <div className="p-4 sm:p-8">
-              <div className="mx-auto mb-8 max-w-3xl rounded-xl border border-gray-200 bg-gray-50 p-6">
-                <h3 className="text-xl font-bold text-gray-900">
-                  English Translation & Context
-                </h3>
-                <p className="mt-3 text-gray-700 leading-relaxed">
-                  <strong>Leaders Conference — Theme:</strong> “Ebenezer, Thus Far the
-                  Lord Has Helped Us,” from 1 Samuel 7:12. The post highlights the
-                  third day of the Église Sur Le Rocher Haiti leaders conference on
-                  August 27, 2026, a time of worship, biblical teaching, fellowship,
-                  and encouragement for Christian leaders serving in Haiti.
-                </p>
-                <p className="mt-3 text-sm text-gray-600">
-                  The original church post is shown below in its original language.
-                  This English summary is provided for our visitors.
-                </p>
-              </div>
-
+              <p className="mx-auto mb-6 max-w-2xl text-center text-lg leading-relaxed text-gray-700">
+                Baptism at Church on the Rock in Haiti — celebrating lives transformed through faith in Jesus Christ.
+              </p>
               <div className="mx-auto w-full max-w-[500px] overflow-hidden rounded-lg">
                 <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=true&width=500"
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feglisesurlerocherhaiti%2Fposts%2Fpfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl&show_text=false&width=500"
                   width="500"
-                  height="829"
+                  height="680"
                   className="w-full max-w-full border-0"
                   style={{ overflow: "hidden" }}
                   scrolling="no"
                   frameBorder="0"
                   allowFullScreen
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  title="Haiti Ministry 2026 Facebook update"
+                  title="Church on the Rock baptism photographs in Haiti"
                 />
               </div>
+              <p className="mt-4 text-center text-sm text-gray-600">
+                <a
+                  href="https://www.facebook.com/eglisesurlerocherhaiti/posts/pfbid02qw2GBgiKEiuxrhmbeGTwjngG9d2dBJVbv5nczJwPB4Ewdvufmn2KWbLhFPkDQnwfl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary-700 underline hover:text-primary-900"
+                >
+                  View the original Church on the Rock Facebook post
+                </a>
+                {" "}for the original caption and Facebook's translation option.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* CTA */}
       <CTASection
