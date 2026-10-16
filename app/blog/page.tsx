@@ -101,7 +101,6 @@ const blogPosts = [
 
 export default function Blog() {
   const featuredPosts = blogPosts.filter((post) => post.featured);
-  const regularPosts = blogPosts.filter((post) => !post.featured);
 
   return (
     <>
@@ -196,75 +195,6 @@ export default function Blog() {
                         >
                           Read More
                           <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                      </div>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Regular Posts */}
-          {regularPosts.length > 0 && (
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
-                <span className="inline-block w-1 h-8 bg-primary-600 mr-3"></span>
-                Recent Updates
-              </h2>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {regularPosts.map((post) => (
-                  <article
-                    key={post.id}
-                    className="group bg-white rounded-xl shadow-md overflow-hidden card-hover"
-                  >
-                    <div className="aspect-video relative overflow-hidden bg-gray-200">
-                      {post.slug === "voices-in-the-wilderness-smitty-jeanne-smith" ? (
-                        <div className="absolute inset-0 overflow-hidden bg-slate-900">
-                          <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
-                            <div
-                              role="img"
-                              aria-label="Voices in the Wilderness television program studio backdrop"
-                              className="absolute inset-0"
-                              style={{ backgroundImage: "url('https://static.wixstatic.com/media/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg/v1/fill/w_973%2Ch_767%2Cal_c%2Cq_85/7fceaa_383abb0559454411a28bcfe3cdc50f3c~mv2.jpeg')", backgroundSize: "100% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat" }}
-                            />
-                          </div>
-                          <div className="absolute inset-x-0 bottom-0 flex h-[58%] flex-col items-center justify-center bg-gradient-to-t from-slate-950 via-slate-900 to-slate-900/90 px-4 text-center text-white">
-                            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-primary-200">Featured on Television</span>
-                            <span className="mt-2 text-xl font-bold sm:text-2xl">Voices in the Wilderness</span>
-                            <span className="mt-1 text-sm text-gray-200">Smitty &amp; Jeanne Smith</span>
-                          </div>
-                        </div>
-                      ) : post.image && (
-                        <Image
-                          src={post.image}
-                          alt={post.title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                          sizes="(max-width: 768px) 100vw, 33vw"
-                        />
-                      )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
-                      <div className="absolute bottom-3 left-3 z-10">
-                        <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-semibold bg-white/95 text-primary-700 shadow">
-                          {post.category}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
-                        {post.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between text-xs text-gray-500">
-                        <span>{new Date(post.date).toLocaleDateString()}</span>
-                        <Link
-                          href={`/blog/${post.slug}`}
-                          className="text-primary-600 font-semibold hover:text-primary-700"
-                        >
-                          Read →
                         </Link>
                       </div>
                     </div>
