@@ -87,18 +87,6 @@ const blogPosts = [
     featured: false,
   },
   {
-    id: 4,
-    title: "Breakthrough in Breakfast Ministry",
-    slug: "breakfast-ministry-breakthrough",
-    excerpt:
-      "Nine years of faithful Saturday morning service has led to incredible transformations. Meet some of the lives changed through Breakfast in the Park.",
-    date: "2024-09-12",
-    author: "Todd Fitts",
-    category: "National Outreach",
-    image: "/images/breakfast-park-team.jpg",
-    featured: false,
-  },
-  {
     id: 5,
     title: "Testimony: Ron R — Never Forgotten",
     slug: "ronal-r-testimony",
