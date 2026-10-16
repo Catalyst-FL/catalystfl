@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import { Globe, Church, Heart, Gift, ExternalLink } from "lucide-react";
+import { Globe, Church, Heart, Gift } from "lucide-react";
 
 export const metadata = generatePageMetadata({
   title: "Haiti Missions & International Outreach - 20+ Years Serving",
